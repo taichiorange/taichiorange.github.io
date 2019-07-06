@@ -4,7 +4,8 @@
 我们发送的信号都是在时域的，因此，如果原始信号是在频域的，则需要做 dft 变换到时域才能发送。
 假如我们有如下 12 个频域信号，从左到右分别对应低频和高频。用序号 0,1,2,3,....,11 来表示。
 
-![Philadelphia's Magic Gardens. This place was so cool!](/images/fftshift/1.jpg "Philadelphia's Magic Gardens")
+![fftshift](http://taichiorange.github.io/images/fftshift/fftshift_1.jpg)
+
 
 
 
