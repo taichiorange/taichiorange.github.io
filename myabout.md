@@ -6,3 +6,5 @@ x_{21} & x_{22} & \ldots \\
 \vdots & \vdots & \ldots \\
 \end{array} \right)
 $$
+
+欢迎来信讨论 blog@leba2010.com
