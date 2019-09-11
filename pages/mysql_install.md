@@ -1,4 +1,5 @@
-( 参考了这个英文网站：https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04）
+(参考了这个英文网站：https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04)
+
 第一步，缺省安装，对密码等没有做任何设置。数据库处于不安全状态。在后续步骤中会设置安全密码。
 
 > $     sudo apt install mysql-server
