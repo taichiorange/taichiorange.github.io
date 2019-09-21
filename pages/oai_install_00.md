@@ -2,11 +2,11 @@
 
 # 软件环境
 >$   lsb_release -a
-No LSB modules are available.
-Distributor ID:	Ubuntu
-Description:	Ubuntu 18.04.3 LTS
-Release:	18.04
-Codename:	bionic
+>No LSB modules are available.
+>Distributor ID:	Ubuntu
+>Description:	Ubuntu 18.04.3 LTS
+>Release:	18.04
+>Codename:	bionic
 
 
 #  clone 下载源码
@@ -25,7 +25,7 @@ Codename:	bionic
 ## 编译准备
 安装需要的软件包
 >source ./oaienv    
-sudo ./build_oai -I
+>sudo ./build_oai -I
 
 ## 编译（非仿真情况）
 进入 openairinterface5g.git 仓库所在目录
@@ -42,18 +42,18 @@ sudo ./build_oai -I
 ## 编译准备
 安装需要的软件包
 >source ./oaienv    
-sudo ./build_oai -I
+>sudo ./build_oai -I
 
 
 # 碰到问题
 ## 443 问题
 >正克隆到 '/opt/ssh'...
-fatal: unable to access 'https://gist.github.com/2190472.git/': Failed to connect to gist.github.com port 443: 连接超时
+>fatal: unable to access 'https://gist.github.com/2190472.git/': Failed to connect to gist.github.com port 443: 连接超时
 
 则用vim打开 build_helper文件，即 vim tools/build_helper  注释下面两行代码
 
    >$SUDO rm -fr /opt/ssh
-   $SUDO git clone https://gist.github.com/2190472.git /opt/ssh
+   >$SUDO git clone https://gist.github.com/2190472.git /opt/ssh
 
 
 ## ctags 问题
