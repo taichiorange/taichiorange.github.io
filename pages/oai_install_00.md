@@ -1,4 +1,4 @@
-@[TOC](OpenAirInterface安装记录)
+**OpenAirInterface安装记录**
 
 # 软件环境
 >$   lsb_release -a
@@ -7,6 +7,7 @@
 >Description:	Ubuntu 18.04.3 LTS
 >Release:	18.04
 >Codename:	bionic
+
 
 
 #  clone 下载源码
