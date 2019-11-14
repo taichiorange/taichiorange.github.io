@@ -22,7 +22,11 @@ TASK_GTPV1_U, gtpv1u_eNB_task
 
 
 
+# SCTP
 
+SCTP refers to the Stream Control Transmission Protocol
+LTE S1-MME (control plane)
 
+The LTE S1-MME interface is responsible for delivering signaling protocols between the eNodeB and the MME. S1-MME interface consists of a Stream Control Transmission Protocol (SCTP) over IP and supports multiple UEs through a single SCTP association. It also provides guaranteed data delivery. The application signaling protocol is an S1-AP (Application Protocol). The LTE S1-MME is responsible for Evolved Packet System (EPS) bearer setup/release procedures, the handover signaling procedure, the paging procedure and the NAS transport procedure.
 
 ![fftshift](http://taichiorange.github.io/images/fftshift/CableFree-S1-lte-interface.gif)
