@@ -21,7 +21,7 @@ TASK_GTPV1_U, gtpv1u_eNB_task
 # LTE architecture
 
 Control Plane Protocol
-> S1-AP  ------------ wuxian wangluo ceng  
+> S1-AP  ------------ 无线网络层  
 > SCTP  
 > IP
 > Shuju Lianlu Ceng  
@@ -33,8 +33,8 @@ User Plane Protocol
 > GTP-U  
 > UDP  
 > IPv6 or IPv4  
-> Shuju Lianlu Ceng
-> Wuli Ceng
+> 数据链路层
+> 物理层
 
 ![control plan](http://taichiorange.github.io/images/lte_arch/user_plan.png)
 
