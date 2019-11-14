@@ -46,3 +46,6 @@ LTE S1-MME (control plane)
 The LTE S1-MME interface is responsible for delivering signaling protocols between the eNodeB and the MME. S1-MME interface consists of a Stream Control Transmission Protocol (SCTP) over IP and supports multiple UEs through a single SCTP association. It also provides guaranteed data delivery. The application signaling protocol is an S1-AP (Application Protocol). The LTE S1-MME is responsible for Evolved Packet System (EPS) bearer setup/release procedures, the handover signaling procedure, the paging procedure and the NAS transport procedure.
 
 ![S1](http://taichiorange.github.io/images/lte_arch/CableFree-S1-lte-interface.gif)
+
+# 5G DU and CU
+![5G](http://taichiorange.github.io/images/5G/5G_arch_E1F1-1.png)
