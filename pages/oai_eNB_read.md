@@ -1,5 +1,9 @@
 # to create tasks of eNB
-int create_tasks(uint32_t enb_nb)
+## init_eNB_proc()  
+   init_te_thread: create **te_thread** in which deal with dlsch    
+   init_td_thread: create **td_thread** in which deal with ulsch    
+
+## int create_tasks(uint32_t enb_nb)
 ### MUST
 TASK_ENB_APP, eNB_app_task  
 TASK_RRC_ENB, rrc_enb_task  
