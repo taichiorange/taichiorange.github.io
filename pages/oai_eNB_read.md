@@ -55,3 +55,24 @@ The LTE S1-MME interface is responsible for delivering signaling protocols betwe
 
 # 5G DU and CU
 ![5G](http://taichiorange.github.io/images/5G/5G_arch_E1F1-1.png)
+
+# LTE RACH
+Exactly when and Where a UE transmit RACH ?
+
+ 
+
+To answer to this question, you need to refer to 3GPP specification TS36.211 - Table 5.7.1-2. This table would give you at which frame and subframe that UE is allowed to transmit a PRACH Preamble. As you see at this table, the prach preamble timing and prach preamble type is determined by PRACH Configuration Index. The, how PRACH Configuration Index is determined ? It is determined by SIB2 parameter prach-ConfigIndex.
+
+ 
+
+< TS36.211 - Table 5.7.1-2 : PRACH Configuration Index>
+
+
+
+ 
+
+Did you open the specification now ? It shows exactly when a UE is supposed to send RACH depending on a parameter called "PRACH Configuration Index".
+
+ 
+
+For example, if the UE is using "PRACH Configuration Idex 0", it should transmit the RACH only in EVEN number SFN(System Frame Number). Is this good enough answer ? Does this mean that this UE can transmit the RACH in any time within the specified the SFN ? The answer to this question is in "Sub Frame Number" colulmn of the table. It says "1" for "PRACH Configuration Idex 0". It means the UE is allowed to transmit RACH only at sub frame number 1 of every even SFN.
