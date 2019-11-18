@@ -25,7 +25,7 @@ TASK_GTPV1_U, gtpv1u_eNB_task
 phy_procedures_eNB_TX() is called by **rxtx().  
 **rxtx()** is called by **eNB_top()**.  
 **eNB_top** is pointed to ***RC.ru[ru_id]->eNB_top*** in the function **init_eNB_afterRU()**
-
+***RC.ru[ru_id]->eNB_top*** is called in **wakeup_L1s()**
 
 
 # LTE architecture
