@@ -21,6 +21,8 @@ TASK_GTPV1_U, gtpv1u_eNB_task
 > TASK_DU_F1, F1AP_DU_task
 
 
+# eNB tx
+phy_procedures_eNB_TX()
 
 
 
