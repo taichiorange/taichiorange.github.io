@@ -28,7 +28,7 @@ TASK_GTPV1_U, gtpv1u_eNB_task
 ***RC.ru[ru_id]->eNB_top*** is called in **wakeup_L1s()**  
 **wakeup_L1s()** is called in the loop of **ru_thread**  
 **ru_thread** is **CREATED** by **init_RU_proc()**  
-**init_RU_proc()** is called by **init_RU**  
+**init_RU_proc()** is called by **init_RU**      (notes: Radio Remote Unit(RRU) )  
 **init_RU()** is called by **main()** in the eNB project **lte-softmodem.c** **!**  
   
  [1] **init_eNB_afterRU()**  is called by **main()** in the eNB project **lte-softmodem.c** **!** 
