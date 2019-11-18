@@ -33,7 +33,7 @@ TASK_GTPV1_U, gtpv1u_eNB_task
   
  [1] **init_eNB_afterRU()**  is called by **main()** in the eNB project **lte-softmodem.c** **!** 
 
-
+  notes: **wakeup_L1s()** is called each ms ( subframe )  
 
 # LTE architecture
 
