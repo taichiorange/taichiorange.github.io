@@ -66,7 +66,7 @@ To answer to this question, you need to refer to 3GPP specification TS36.211 - T
  
 
 < TS36.211 - Table 5.7.1-2 : PRACH Configuration Index>
-
+![S1](http://taichiorange.github.io/images/lte_arch/rach_when_where_36_211_Table_5_7_1_2_PRACH.png)
 
 
  
