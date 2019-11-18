@@ -23,8 +23,8 @@ TASK_GTPV1_U, gtpv1u_eNB_task
 
 # eNB tx
 phy_procedures_eNB_TX() is called by **rxtx().  
-**rxtx()** is called by **eNB_top**.  
-
+**rxtx()** is called by **eNB_top()**.  
+**eNB_top** is pointed to ***RC.ru[ru_id]->eNB_top*** in the function **init_eNB_afterRU()**
 
 
 
