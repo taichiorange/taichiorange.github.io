@@ -1,7 +1,7 @@
 # to create tasks of eNB
 ## init_eNB_proc()  
    init_te_thread: create **te_thread** in which deal with dlsch(downlink)    
-   init_td_thread: create **td_thread** in which deal with ulsch(uplink) 
+   init_td_thread: create **td_thread** in which deal with ulsch(uplink)  
    **eNB_thread_prach**  
    **eNB_thread_prach_br**
 
@@ -22,7 +22,9 @@ TASK_GTPV1_U, gtpv1u_eNB_task
 
 
 # eNB tx
-phy_procedures_eNB_TX()
+phy_procedures_eNB_TX() is called by **rxtx().  
+**rxtx()** is called by **eNB_top**.  
+
 
 
 
