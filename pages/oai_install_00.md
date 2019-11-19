@@ -56,6 +56,7 @@
    >$SUDO rm -fr /opt/ssh
    >$SUDO git clone https://gist.github.com/2190472.git /opt/ssh
 
+   原因是 gist.github.com 被**墙**了
 
 ## ctags 问题
 
