@@ -1,12 +1,12 @@
 **OpenAirInterface安装记录**
 
 # 软件环境
->$   lsb_release -a
->No LSB modules are available.
->Distributor ID:	Ubuntu
->Description:	Ubuntu 18.04.3 LTS
->Release:	18.04
->Codename:	bionic
+>$   lsb_release -a  
+>No LSB modules are available.  
+>Distributor ID:	Ubuntu  
+>Description:	Ubuntu 18.04.3 LTS  
+>Release:	18.04  
+>Codename:	bionic  
 
 
 
@@ -25,7 +25,7 @@
 # 编译 eNB/UE
 ## 编译准备
 安装需要的软件包
->source ./oaienv    
+>source ./oaienv  
 >sudo ./build_oai -I
 
 ## 编译（非仿真情况）
@@ -48,12 +48,12 @@
 
 # 碰到问题
 ## 443 问题
->正克隆到 '/opt/ssh'...
+>正克隆到 '/opt/ssh'...  
 >fatal: unable to access 'https://gist.github.com/2190472.git/': Failed to connect to gist.github.com port 443: 连接超时
 
 则用vim打开 build_helper文件，即 vim tools/build_helper  注释下面两行代码
 
-   >$SUDO rm -fr /opt/ssh
+   >$SUDO rm -fr /opt/ssh  
    >$SUDO git clone https://gist.github.com/2190472.git /opt/ssh
 
    原因是 gist.github.com 被**墙**了
