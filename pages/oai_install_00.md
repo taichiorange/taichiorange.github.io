@@ -45,7 +45,22 @@
 >source ./oaienv    
 >sudo ./build_oai -I
 
+# Running
+## to run eNB
+> enter the directory:   **/openairinterface5g/cmake_targets/lte_build_oai/build**  
+> ENODEB=1 sudo -E ./lte-softmodem -O ~/OAI/openairinterface5g/ci-scripts/conf_files/lte-fdd-basic-sim.conf --basicsim  
 
+or  
+> ENODEB=1 sudo -E ./lte-softmodem -O ~/OAI/openairinterface5g/ci-scripts/conf_files/lte-fdd-basic-sim.conf --basicsim --noS1  
+
+## to run UE
+### generate config file
+>  edit  vim ~/OAI/openairinterface5g/openair3/NAS/TOOLS/ue_eurecom_test_sfr.conf  
+>  enter the directory:   **/openairinterface5g/cmake_targets/lte_build_oai/build** 
+>  sudo ../../nas_sim_tools/build/conf2uedata -c ~/OAI/openairinterface5g/openair3/NAS/TOOLS/ue_eurecom_test_sfr.conf -o ./
+### to run
+> enter the directory:   **/openairinterface5g/cmake_targets/lte_build_oai/build**   
+> sudo -E ./lte-uesoftmodem -C 2625000000 -r 25 --ue-rxgain 140 --basicsim
 # 碰到问题
 ## 443 问题
 >正克隆到 '/opt/ssh'...  
