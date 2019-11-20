@@ -34,6 +34,14 @@
 执行如下命令：
 >$ sudo ./build_oai --eNB --UE
 
+If you want to compile **UE** after modifying some codes ( do not comiple LIBs):
+> enter the directory:   **/openairinterface5g/cmake_targets/lte_build_oai/build**  
+> sudo make lte-uesoftmodem
+
+If you want to **eNB** after modifying some codes ( do not comiple LIBs):
+> enter the directory:   **/openairinterface5g/cmake_targets/lte_build_oai/build**  
+> sudo make lte-softmodem
+
 ## PHY Simulation 编译
 >cd cmake_targets
 ./build_oai --phy_simulators
