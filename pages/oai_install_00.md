@@ -81,6 +81,17 @@ or
 
    原因是 gist.github.com 被**墙**了
 
+## ASN1c install
+In this file 
+> OAI/openairinterface5g/cmake_targets/tools/build_helper  
+
+the ASN1c is git cloned and installed: 
+>git clone https://gitlab.eurecom.fr/oai/asn1c.git /tmp/asn1c  
+
+but CLONE is very slow and easy to abort, we can git clone it before "build_oai -I"  
+then copy the repo to /tmp/asn1c
+
+
 ## ctags 问题
 
 OAI 提供了一个 脚本，来生成 tags 文件，其中使用了一个参数  -E，会导致生成的 tags文件，在 ubuntu/INTEL 体系下工作不正常（是因为tags文件中生成了一些不可见字符）。
