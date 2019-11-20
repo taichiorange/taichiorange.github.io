@@ -56,7 +56,7 @@ or
 ## to run UE
 ### generate config file
 >  edit  vim ~/OAI/openairinterface5g/openair3/NAS/TOOLS/ue_eurecom_test_sfr.conf  
->  enter the directory:   **/openairinterface5g/cmake_targets/lte_build_oai/build** 
+>  enter the directory:   **/openairinterface5g/cmake_targets/lte_build_oai/build**  
 >  sudo ../../nas_sim_tools/build/conf2uedata -c ~/OAI/openairinterface5g/openair3/NAS/TOOLS/ue_eurecom_test_sfr.conf -o ./
 ### to run
 > enter the directory:   **/openairinterface5g/cmake_targets/lte_build_oai/build**   
