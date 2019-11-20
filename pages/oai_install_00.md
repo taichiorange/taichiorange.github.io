@@ -27,6 +27,15 @@
 安装需要的软件包
 >source ./oaienv  
 >sudo ./build_oai -I
+### ASN1c install
+In this file 
+> OAI/openairinterface5g/cmake_targets/tools/build_helper  
+
+the ASN1c is git cloned and installed: 
+>git clone https://gitlab.eurecom.fr/oai/asn1c.git /tmp/asn1c  
+
+but CLONE is very slow and easy to abort, we can git clone it before "build_oai -I"  
+then copy the repo to /tmp/asn1c
 
 ## 编译（非仿真情况）
 进入 openairinterface5g.git 仓库所在目录
@@ -52,6 +61,18 @@ If you want to **eNB** after modifying some codes ( do not comiple LIBs):
 安装需要的软件包
 >source ./oaienv    
 >sudo ./build_oai -I
+
+## compile tcp_bridge_oai
+
+When simulating RF by using TCP, this file is used:
+>targets/ARCH/tcp_bridge/tcp_bridge_oai.c  
+
+build the tcp_bridge only:
+> cd /openairinterface5g/cmake_targets/lte_build_oai/build  
+> sudo make tcp_bridge_oai  
+
+This is a **.so** file, dynamically used, so do not need to re-compile **lte-uesoftmodem** and **lte-softmodem**   
+
 
 # Running
 ## to run eNB
@@ -80,16 +101,6 @@ or
    >$SUDO git clone https://gist.github.com/2190472.git /opt/ssh
 
    原因是 gist.github.com 被**墙**了
-
-## ASN1c install
-In this file 
-> OAI/openairinterface5g/cmake_targets/tools/build_helper  
-
-the ASN1c is git cloned and installed: 
->git clone https://gitlab.eurecom.fr/oai/asn1c.git /tmp/asn1c  
-
-but CLONE is very slow and easy to abort, we can git clone it before "build_oai -I"  
-then copy the repo to /tmp/asn1c
 
 
 ## ctags 问题
