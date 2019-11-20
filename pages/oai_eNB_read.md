@@ -35,6 +35,11 @@ TASK_GTPV1_U, gtpv1u_eNB_task
 
   notes: **wakeup_L1s()** is called each ms ( subframe )  
 
+# eNB rx
+ **rx_rf()** is called **ru_thread()**, I think it should be called every 1ms.  
+ .. *rx_rf is assigned to a function pointer: **fh_south_in***  
+    
+
 # LTE architecture
 
 Control Plane Protocol
