@@ -22,6 +22,14 @@ TASK_GTPV1_U, gtpv1u_eNB_task
 
 
 # eNB tx
+
+----------- data tx --------begin-------------------------------------  
+**txs = ru->rfdevice.trx_write_func** is pointed to **tcp_bridge_write()**  
+**u->rfdevice.trx_write_func** is called by **tx_rf()**  
+**ru->fh_south_out** is pointed to **tx_rf()**  
+**ru->fh_south_out** is called by **rxtx()**  
+----------- data tx -------- end -------------------------------------  
+----------- wakeup 1ms --------begin-------------------------------------  
 **phy_procedures_eNB_TX()** is called by **rxtx()**.  
 **rxtx()** is called by **eNB_top()**.  
 **eNB_top** is pointed to ***RC.ru[ru_id]->eNB_top*** in the function **init_eNB_afterRU()**  [1]  
@@ -30,7 +38,8 @@ TASK_GTPV1_U, gtpv1u_eNB_task
 **ru_thread** is **CREATED** by **init_RU_proc()**  
 **init_RU_proc()** is called by **init_RU**      (notes: Radio Remote Unit(RRU) )  
 **init_RU()** is called by **main()** in the eNB project **lte-softmodem.c** **!**  
-  
+ ----------- wakeup 1ms --------end-------------------------------------  
+ 
  [1] **init_eNB_afterRU()**  is called by **main()** in the eNB project **lte-softmodem.c** **!** 
 
   notes: **wakeup_L1s()** is called each ms ( subframe )  
