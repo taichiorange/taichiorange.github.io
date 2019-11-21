@@ -65,8 +65,8 @@ Control Plane Protocol
 > S1-AP  ------------ 无线网络层  
 > SCTP  
 > IP
-> Shuju Lianlu Ceng  
-> Wuli Ceng
+> 数据链路层  
+> 物理层
 
 ![control plan](http://taichiorange.github.io/images/lte_arch/control_plan.png)
 
