@@ -48,9 +48,9 @@ TASK_GTPV1_U, gtpv1u_eNB_task
 **trx_read_func** is pointed to **tcp_bridge_read()** when using TCP bridge.  
 **UE** uses **tcp_bridge_read()** and **tcp_bridge_read_ue** both **!**  
 **rxs = ru->rfdevice.trx_read_func()** is called when need to read data in. This is called by **rx_rf()**.
-
- **rx_rf()** is called **ru_thread()**, I think it should be called every 1ms.  
- .. *rx_rf is assigned to a function pointer: **fh_south_in***  
+**rx_rf()** is assigned to a function pointer: **fh_south_in**
+**fh_south_in** is called **ru_thread()**, I think it should be called every 1ms.  
+*Notes: ru_thread 的核心内层循环，“it loops over subframes which are scheduled by **incoming** samples from HW devices”*  
     
 
 # LTE architecture
