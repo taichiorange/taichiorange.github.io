@@ -3,7 +3,9 @@
    init_te_thread: create **te_thread** in which deal with dlsch(downlink)    
    init_td_thread: create **td_thread** in which deal with ulsch(uplink)  
    **eNB_thread_prach**  
-   **eNB_thread_prach_br**
+   **eNB_thread_prach_br**  
+## init_RU_proc()
+**ru_thread**  
 
 ## int create_tasks(uint32_t enb_nb)
 ### MUST
