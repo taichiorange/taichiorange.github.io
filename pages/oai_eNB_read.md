@@ -74,7 +74,7 @@ User Plane Protocol
 > GTP-U  
 > UDP  
 > IPv6 or IPv4  
-> 数据链路层
+> 数据链路层  
 > 物理层
 
 ![control plan](http://taichiorange.github.io/images/lte_arch/user_plan.png)
