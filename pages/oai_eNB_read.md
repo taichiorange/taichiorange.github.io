@@ -23,7 +23,9 @@ TASK_GTPV1_U, gtpv1u_eNB_task
 > TASK_DU_F1, F1AP_DU_task
 
 # eNB 收发数据
+
 由线程 **ru_thread()** 负责读取和发送数据，分别调用下面两个函数指针：  
+( 在没有创建 ru_thread_tx 线程的情况下）
 1）ru->fh_south_in  
 2）ru->fh_south_out  
 
