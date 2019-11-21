@@ -12,7 +12,7 @@ TASK_RRC_ENB, rrc_enb_task
 ### Optional, but created
 TASK_SCTP, sctp_eNB_task  
 TASK_S1AP, s1ap_eNB_task  
-TASK_UDP, udp_eNB_task: this is for emulated RF  
+TASK_UDP, udp_eNB_task ？？  
 TASK_GTPV1_U, gtpv1u_eNB_task
 
 ### Optional, but **NOT** created:  
@@ -20,14 +20,18 @@ TASK_GTPV1_U, gtpv1u_eNB_task
 > TASK_CU_F1, F1AP_CU_task  
 > TASK_DU_F1, F1AP_DU_task
 
+# eNB 收发数据
+由线程 **ru_thread()** 负责读取和发送数据，分别调用下面两个函数指针：  
+1）ru->fh_south_in  
+2）ru->fh_south_out  
 
-# eNB tx
+## eNB tx
 
 ----------- data tx --------begin-------------------------------------  
 **txs = ru->rfdevice.trx_write_func** is pointed to **tcp_bridge_write()**  
 **u->rfdevice.trx_write_func** is called by **tx_rf()**  
 **ru->fh_south_out** is pointed to **tx_rf()**  
-**ru->fh_south_out** is called by **rxtx()**  
+**ru->fh_south_out** is called by **ru_thread()**  
 ----------- data tx -------- end -------------------------------------  
 ----------- wakeup 1ms --------begin-------------------------------------  
 **phy_procedures_eNB_TX()** is called by **rxtx()**.  
@@ -44,12 +48,12 @@ TASK_GTPV1_U, gtpv1u_eNB_task
 
   notes: **wakeup_L1s()** is called each ms ( subframe )  
 
-# eNB rx
+## eNB rx
 **trx_read_func** is pointed to **tcp_bridge_read()** when using TCP bridge.  
 **UE** uses **tcp_bridge_read()** and **tcp_bridge_read_ue** both **!**  
 **rxs = ru->rfdevice.trx_read_func()** is called when need to read data in. This is called by **rx_rf()**.
 **rx_rf()** is assigned to a function pointer: **fh_south_in**
-**fh_south_in** is called **ru_thread()**, I think it should be called every 1ms.  
+**fh_south_in** is called **ru_thread()**, **ru_thread()** 每读进来一个 subframe，就认为 1ms 时间到了.  
 *Notes: ru_thread 的核心内层循环，“it loops over subframes which are scheduled by **incoming** samples from HW devices”*  
     
 
