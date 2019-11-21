@@ -1,1 +1,1 @@
-
+LTE_NB_RACH_TimeFrequencyStructure_01.png
