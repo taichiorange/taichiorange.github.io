@@ -67,6 +67,16 @@ TASK_GTPV1_U, gtpv1u_eNB_task
 ------rx data processing-----begin-------------------------------------  
 **phy_procedures_eNB_uespec_RX()** is called in **rxtx()**    
 ------rx data processing-----end-------------------------------------  
+
+# eNB_thread_prach thread  
+--prach_procedures()  
+----rx_prach()  
+------rx_prach0()  
+
+
+
+
+
 # LTE architecture
 
 Control Plane Protocol
