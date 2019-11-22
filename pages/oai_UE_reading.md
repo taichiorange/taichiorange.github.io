@@ -12,3 +12,5 @@ init_UE(NB_UE_INST...)
 pthread_cond_broadcast(&sync_cond)  
 printf("TYPE <CTRL-C> TO TERMINATE\n")  
 itti_wait_tasks_end()----- waiting forever here
+# UE_thread_rxn_txnp4  
+
