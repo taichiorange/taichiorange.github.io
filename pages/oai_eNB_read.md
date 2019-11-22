@@ -59,7 +59,10 @@ TASK_GTPV1_U, gtpv1u_eNB_task
 **rx_rf()** is assigned to a function pointer: **fh_south_in**
 **fh_south_in** is called **ru_thread()**, **ru_thread()** 每读进来一个 subframe，就认为 1ms 时间到了.  
 *Notes: ru_thread 的核心内层循环，“it loops over subframes which are scheduled by **incoming** samples from HW devices”*  
-    
+
+
+---- data processing of RX
+**phy_procedures_eNB_uespec_RX()** is called in **rxtx()**    
 
 # LTE architecture
 
