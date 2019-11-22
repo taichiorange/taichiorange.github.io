@@ -6,4 +6,4 @@
 ## [LTE/NB-IOT tutorial](/pages/LTE_NB_IoT_tutorial.html)
 #  OpenAirInterface 系列
 ## [安装](/pages/oai_install_00.html) 
-## [eNB](/pages/oai_eNB_read.html)
+
