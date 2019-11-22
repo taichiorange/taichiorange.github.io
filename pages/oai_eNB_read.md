@@ -90,6 +90,7 @@ User Plane Protocol
 
 SCTP refers to the Stream Control Transmission Protocol
 LTE S1-MME (control plane)
+可以类比为 TCP 协议，在 IP 层之上构建了一个稳定可靠、面向连接的传输层。
 
 The LTE S1-MME interface is responsible for delivering signaling protocols between the eNodeB and the MME. S1-MME interface consists of a Stream Control Transmission Protocol (SCTP) over IP and supports multiple UEs through a single SCTP association. It also provides guaranteed data delivery. The application signaling protocol is an S1-AP (Application Protocol). The LTE S1-MME is responsible for Evolved Packet System (EPS) bearer setup/release procedures, the handover signaling procedure, the paging procedure and the NAS transport procedure.
 
