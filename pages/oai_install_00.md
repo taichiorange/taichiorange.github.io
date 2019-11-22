@@ -80,9 +80,9 @@ This is a **.so** file, dynamically used, so do not need to re-compile **lte-ues
 > ENODEB=1 sudo -E ./lte-softmodem -O ~/OAI/openairinterface5g/ci-scripts/conf_files/lte-fdd-basic-sim.conf --basicsim  
 
 If you do not debug NB-IoT, should use this command:  
->ENODEB=1 sudo -E ./lte-softmodem -O ~/OAI/openairinterface5g/ci-scripts/conf_files/lte-fdd-basic-sim.conf --basicsim --**nbiot-disable** | sudo tee enb_debug.log
+>ENODEB=1 sudo -E ./lte-softmodem -O ~/OAI/openairinterface5g/ci-scripts/conf_files/lte-fdd-basic-sim.conf --basicsim --**nbiot-disable** | sudo tee enb_debug.log  
 (otherwise, error message : "[LOADER] library libNB_IoT.so is not loaded: libNB_IoT.so: **cannot** open shared object file: No such file or directory"  
-
+  
 or  
 > ENODEB=1 sudo -E ./lte-softmodem -O ~/OAI/openairinterface5g/ci-scripts/conf_files/lte-fdd-basic-sim.conf --basicsim --noS1  
 
