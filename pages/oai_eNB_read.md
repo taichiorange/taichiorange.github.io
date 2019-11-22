@@ -71,7 +71,7 @@ TASK_GTPV1_U, gtpv1u_eNB_task
 Control Plane Protocol
 > S1-AP  ------------ 无线网络层  
 > SCTP  
-> IP
+> IP  
 > 数据链路层  
 > 物理层
 
