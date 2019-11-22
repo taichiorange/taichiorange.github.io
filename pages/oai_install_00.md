@@ -79,6 +79,9 @@ This is a **.so** file, dynamically used, so do not need to re-compile **lte-ues
 > enter the directory:   **/openairinterface5g/cmake_targets/lte_build_oai/build**  
 > ENODEB=1 sudo -E ./lte-softmodem -O ~/OAI/openairinterface5g/ci-scripts/conf_files/lte-fdd-basic-sim.conf --basicsim  
 
+If you do not debug NB-IoT, should use this command:  
+>ENODEB=1 sudo -E ./lte-softmodem -O ~/OAI/openairinterface5g/ci-scripts/conf_files/lte-fdd-basic-sim.conf --basicsim --**nbiot-disable** | sudo tee enb_debug.log
+
 or  
 > ENODEB=1 sudo -E ./lte-softmodem -O ~/OAI/openairinterface5g/ci-scripts/conf_files/lte-fdd-basic-sim.conf --basicsim --noS1  
 
