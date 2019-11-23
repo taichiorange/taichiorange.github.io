@@ -72,6 +72,8 @@ TASK_GTPV1_U, gtpv1u_eNB_task
 --prach_procedures()  
 ----rx_prach()  
 ------rx_prach0()  
+---------- calculate **max_preamble_energy** and **avg_preamble_energy**  
+
 
 
 # rxtx() function
