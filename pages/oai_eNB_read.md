@@ -74,7 +74,9 @@ TASK_GTPV1_U, gtpv1u_eNB_task
 ------rx_prach0()  
 
 
-
+# rxtx() function
+wakeup_prach_eNB()  
+wakeup_prach_eNB_br()  
 
 
 # LTE architecture
