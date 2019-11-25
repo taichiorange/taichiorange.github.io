@@ -141,3 +141,8 @@ For example, if the UE is using "PRACH Configuration Idex 0", it should transmit
 **RA**U: **Radio-Access** Unit  
 R**RU**: Radio **Remote-Unit**  
 ![control plan](http://taichiorange.github.io/images/openairinterface/eNB_Functional_Splits.png)
+
+# 缩写和名词解释
+C-RAN: Centralized RAN
+NGFI:  Next Generation Fronthaul Interface
+
