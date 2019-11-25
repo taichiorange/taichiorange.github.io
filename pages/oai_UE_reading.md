@@ -15,8 +15,8 @@ itti_wait_tasks_end()----- waiting forever here
 
 # UE_thread() 线程
 
-trx_read_func, 这是一个函数指针，指向了 tcp_bridge_write
-trx_write_func,这是一个函数指针，指向了 tcp_bridge_read
+trx_read_func, 这是一个函数指针，指向了 tcp_bridge_write  
+trx_write_func,这是一个函数指针，指向了 tcp_bridge_read  
 
 # UE_thread_rxn_txnp4  
 phy_procedures_UE_RX  
@@ -28,5 +28,5 @@ phy_procedures_UE_TX()
 --------ue_get_rach(): get resource(such as RA windown) from upper layers  
 --------get_tx_amp()  
 --------generate_prach()  
---------Msg1_transmitted()  
+--------Msg1_transmitted():这里不是真正传数据的地方，传数据在 UE_thread() 中的 trx_write_func 那里。  
   
