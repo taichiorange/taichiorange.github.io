@@ -17,4 +17,4 @@ phy_procedures_UE_RX
 ue_scheduler  
 ----rrc_rx_tx_ue()  
 -------- check whether T300 timeout: whether RRC connect failed/timeout  
-  
+phy_procedures_UE_TX()  
