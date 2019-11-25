@@ -19,7 +19,7 @@ ue_scheduler
 -------- check whether T300 timeout: whether RRC connect failed/timeout  
 phy_procedures_UE_TX()  
 ----ue_prach_procedures()  
---------ue_get_rach()  
+--------ue_get_rach(): get resource(such as RA windown) from upper layers  
 --------get_tx_amp()  
 --------generate_prach()  
 --------Msg1_transmitted()  
