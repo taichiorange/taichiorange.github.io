@@ -18,3 +18,9 @@ ue_scheduler
 ----rrc_rx_tx_ue()  
 -------- check whether T300 timeout: whether RRC connect failed/timeout  
 phy_procedures_UE_TX()  
+----ue_prach_procedures()  
+--------ue_get_rach()  
+--------get_tx_amp()  
+--------generate_prach()  
+--------Msg1_transmitted()  
+  
