@@ -12,6 +12,12 @@ init_UE(NB_UE_INST...)
 pthread_cond_broadcast(&sync_cond)  
 printf("TYPE <CTRL-C> TO TERMINATE\n")  
 itti_wait_tasks_end()----- waiting forever here
+
+# UE_thread() 线程
+
+trx_read_func, 这是一个函数指针，指向了 tcp_bridge_write
+trx_write_func,这是一个函数指针，指向了 tcp_bridge_read
+
 # UE_thread_rxn_txnp4  
 phy_procedures_UE_RX  
 ue_scheduler  
