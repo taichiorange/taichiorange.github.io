@@ -134,3 +134,10 @@ Did you open the specification now ? It shows exactly when a UE is supposed to s
  
 
 For example, if the UE is using "PRACH Configuration Idex 0", it should transmit the RACH only in EVEN number SFN(System Frame Number). Is this good enough answer ? Does this mean that this UE can transmit the RACH in any time within the specified the SFN ? The answer to this question is in "Sub Frame Number" colulmn of the table. It says "1" for "PRACH Configuration Idex 0". It means the UE is allowed to transmit RACH only at sub frame number 1 of every even SFN.
+
+# eNB 功能划分
+
+**RC**C: **Radio-Cloud** Center  
+**RA**U: **Radio-Access** Unit  
+R**RU**: Radio **Remote-Unit**  
+![control plan](http://taichiorange.github.io/images/openairinterface/eNB_Functional_Splits.png)
