@@ -14,7 +14,7 @@ format 1: 1.6ms = 267us+ 1.333ms = 1.6ms
 ## when and where does UE send RACH?
 PRACH Configuration Index is determined by SIB2 parameter **prach-ConfigIndex**.  
 PRACH Configuration Index determines when and where UE sends RACH.  
-![prach-ConfigIndex](http://taichiorange.github.io/images/lte_initial_attach/.png)
+![prach_ConfigIndex](http://taichiorange.github.io/images/lte_initial_attach/RACH_Configuration_Index.png)
 
 
 
