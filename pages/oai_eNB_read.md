@@ -80,4 +80,15 @@ TASK_GTPV1_U, gtpv1u_eNB_task
 wakeup_prach_eNB()  
 wakeup_prach_eNB_br()  
 
+# RACH flow
+rxtx()  
+----UL_indication()  
+--------handle_rach()  
+------------initiate_ra_proc()---handles the event of MSG1 reception, **ra[i].state = MSG2**  
+--------eNB_dlsch_ulsch_scheduler()  
+------------schedule_RA()  
+----------------generate_Msg2() when **"if (ra->state == MSG2)"**  
+----------------generate_Msg4  
+----------------check_Msg4_retransmission()  
+
 

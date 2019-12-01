@@ -29,4 +29,14 @@ phy_procedures_UE_TX()
 --------get_tx_amp()  
 --------generate_prach()  
 --------Msg1_transmitted():这里不是真正传数据的地方，传数据在 UE_thread() 中的 trx_write_func 那里。  
-  
+
+# NAS
+emm_sap_send  
+----emm_as_send  
+--------_emm_as_send  
+------------nas_itti_cell_info_req(plmnID,rat)  when case AS_CELL_INFO_REQ:  
+
+Messages:  
+_EMMAS_CELL_INFO_REQ = EMMAS_CELL_INFO_REQ , this msg sent by **_IdleMode_get_suitable_cell()**  
+----AS_CELL_INFO_REQ  
+ 
