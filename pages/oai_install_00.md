@@ -119,8 +119,11 @@ UE MUST NOT use --noS1 option, otherwise This will result in *PLMN not matching*
 
 
 # 编译核心网工程（非 5G）
-## 编译准备
-安装需要的软件包
->source ./oaienv    
+## HSS
+> cd openair-cn  
+> source oaienv  
+> cd scripts  
+> ./build_hss -i  
 
+##
 
