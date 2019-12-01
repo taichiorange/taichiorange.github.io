@@ -125,5 +125,5 @@ UE MUST NOT use --noS1 option, otherwise This will result in *PLMN not matching*
 > cd scripts  
 > ./build_hss -i  
 
-##
+## 
 
