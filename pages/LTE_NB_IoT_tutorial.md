@@ -1,4 +1,6 @@
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+# LTE Architecture
+![lte-archtecture](http://taichiorange.github.io/images/lte_arch/LTE-network-architecture.png)
 
 # NPRACH
 format 0: 1.4ms = 67us + 1.333ms = 1.4ms  
