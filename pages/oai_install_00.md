@@ -14,14 +14,6 @@
 **UE/eNB**端的代码：
 >$ git clone https://gitlab.eurecom.fr/oai/openairinterface5g.git
 
-**核心网**代码： 
->$ git clone https://github.com/OPENAIRINTERFACE/openair-cn.git
-
-这两个仓库分别放在两个不同的地方托管，核心网的代码与UE端的代码，用的 LICENSE 不同，所以分开两个仓库管理的。
-
-如果要尝试**5G核心网**，则需要 clone 另外的仓库：
->$ git clone https://github.com/OPENAIRINTERFACE/openair5g-cn.git
-
 # 编译 eNB/UE
 ## 编译准备
 安装需要的软件包
@@ -55,13 +47,6 @@ If you want to **eNB** after modifying some codes ( do not comiple LIBs):
 >cd cmake_targets
 ./build_oai --phy_simulators
 
-
-# 编译核心网工程（非 5G）
-## 编译准备
-安装需要的软件包
->source ./oaienv    
->sudo ./build_oai -I
-
 ## compile tcp_bridge_oai
 
 When simulating RF by using TCP, this file is used:
@@ -71,8 +56,7 @@ build the tcp_bridge only:
 > cd /openairinterface5g/cmake_targets/lte_build_oai/build  
 > sudo make tcp_bridge_oai  
 
-This is a **.so** file, dynamically used, so do not need to re-compile **lte-uesoftmodem** and **lte-softmodem**   
-
+This is a **.so** file, dynamically used, so do not need to re-compile **lte-uesoftmodem** and **lte-softmodem** 
 
 # Running
 ## to run eNB
@@ -123,4 +107,21 @@ OAI 提供了一个 脚本，来生成 tags 文件，其中使用了一个参数
 If eNB uses --noS1 option, UE MUST NOT use --noS1 option.  
 This will result in PLMN not matching.
 >Synched with a cell, but PLMN doesn't match our SIM
+
+
+============================================= EPC part =========================================
+# **核心网**代码： 
+>$ git clone https://github.com/OPENAIRINTERFACE/openair-cn.git
+
+这两个仓库分别放在两个不同的地方托管，核心网的代码与UE端的代码，用的 LICENSE 不同，所以分开两个仓库管理的。
+
+如果要尝试**5G核心网**，则需要 clone 另外的仓库：
+>$ git clone https://github.com/OPENAIRINTERFACE/openair5g-cn.git
+
+
+# 编译核心网工程（非 5G）
+## 编译准备
+安装需要的软件包
+>source ./oaienv    
+
 
