@@ -124,6 +124,7 @@ UE MUST NOT use --noS1 option, otherwise This will result in *PLMN not matching*
 > source oaienv  
 > cd scripts  
 > ./build_hss -i  
+> ./build_hss
 
 ## 
 
