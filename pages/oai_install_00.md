@@ -126,5 +126,7 @@ UE MUST NOT use --noS1 option, otherwise This will result in *PLMN not matching*
 > ./build_hss -i  
 > ./build_hss
 
-## 
+## MME
+> ./build_mme -i  
+>   
 
