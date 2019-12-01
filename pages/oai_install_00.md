@@ -104,8 +104,7 @@ OAI 提供了一个 脚本，来生成 tags 文件，其中使用了一个参数
 
 # --noS1 option problem
 
-If eNB uses --noS1 option, UE MUST NOT use --noS1 option.  
-This will result in PLMN not matching.
+UE MUST NOT use --noS1 option, otherwise This will result in *PLMN not matching*.
 >Synched with a cell, but PLMN doesn't match our SIM
 
 
