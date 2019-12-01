@@ -39,4 +39,11 @@ emm_sap_send
 Messages:  
 _EMMAS_CELL_INFO_REQ = EMMAS_CELL_INFO_REQ , this msg sent by **_IdleMode_get_suitable_cell()**  
 ----AS_CELL_INFO_REQ  
- 
+
+
+# About tunnel between NAS and PDCP
+.tunnel **nas_sock_fd[]** is created in **netlink_init_tun()**  
+.pdcp_fifo_read_input_sdus_fromtun()  --- read from tunnel  
+.pdcp_fifo_flush_sdus() -- write into tunnel  
+
+
