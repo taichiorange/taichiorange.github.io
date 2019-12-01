@@ -91,4 +91,6 @@ rxtx()
 ----------------generate_Msg4  
 ----------------check_Msg4_retransmission()  
 
+# SCTP
+sctp_handle_new_association_req(): use IP address to create connection  
 
