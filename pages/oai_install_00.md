@@ -130,7 +130,15 @@ UE MUST NOT use --noS1 option, otherwise This will result in *PLMN not matching*
 > ./build_mme -i  
 > ./build_mme
 
-## 
+##  SPGW
+### update linux kernel
+> sudo apt install libncurses5-dev libncursesw5-dev bc binutils gcc libssl-dev make autoconf libelf-dev  
+> cd /usr/src; sudo wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.9.108.tar.xz  
+> sudo tar xf linux-4.9.108.tar.xz && cd linux-4.9.108/  
+> sudo make olddefconfig && sudo make -j`nproc`  
+> sudo make modules_install && sudo make install  
+
 
 # topo
+
 ![oai-eNB-EPC-topo](http://taichiorange.github.io/images/openairinterface/eNB_EPC_separate_host-edit.png)
