@@ -132,3 +132,5 @@ UE MUST NOT use --noS1 option, otherwise This will result in *PLMN not matching*
 
 ## 
 
+# topo
+![oai-eNB-EPC-topo](http://taichiorange.github.io/images/openairinterface/eNB_EPC_separate_host-edit.png)
