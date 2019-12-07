@@ -18,6 +18,8 @@ PRACH Configuration Index is determined by SIB2 parameter **prach-ConfigIndex**.
 PRACH Configuration Index determines when and where UE sends RACH.  
 ![prach_ConfigIndex](http://taichiorange.github.io/images/lte_initial_attach/RACH_Configuration_Index.png)
 
+## LTE RACH format
+![lte_rach_flow2](http://taichiorange.github.io/images/lte_initial_attach/xxx.png) 
 
 
 ## LTE RACH 流程图（含 RAR response window 图）
