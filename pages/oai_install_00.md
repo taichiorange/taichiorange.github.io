@@ -63,6 +63,36 @@ build the tcp_bridge only:
 
 This is a **.so** file, dynamically used, so do not need to re-compile **lte-uesoftmodem** and **lte-softmodem** 
 
+
+## sudo ./build_oai --eNB -w USRP  
+###  error message:  
+
+Log file for compilation has been written to: /home/hlx/lte_OAI/openairinterface5g/cmake_targets/log/oai_usrpdevif.Rel14.txt  
+oai_usrpdevif compilation failed  
+build have failed  
+
+
+==========  
+[100%] Built target generate_T  
+Scanning dependencies of target oai_usrpdevif  
+[100%] Building CXX object CMakeFiles/oai_usrpdevif.dir/home/hlx/lte_OAI/openairinterface5g/targets/ARCH/USRP/USERSPACE/LIB/usrp_lib.cpp.o  
+/home/hlx/lte_OAI/openairinterface5g/targets/ARCH/USRP/USERSPACE/LIB/usrp_lib.cpp:31:27: fatal error: uhd/version.hpp: No such file or directory  
+compilation terminated.  
+CMakeFiles/oai_usrpdevif.dir/build.make:62: recipe for target 'CMakeFiles/oai_usrpdevif.dir/home/hlx/lte_OAI/openairinterface5g/targets/ARCH/USRP/USERSPACE/LIB/usrp_lib.cpp.o' failed  
+make[3]: *** [CMakeFiles/oai_usrpdevif.dir/home/hlx/lte_OAI/openairinterface5g/targets/ARCH/USRP/USERSPACE/LIB/usrp_lib.cpp.o] Error 1  
+CMakeFiles/Makefile2:1517: recipe for target 'CMakeFiles/oai_usrpdevif.dir/all' failed  
+make[2]: *** [CMakeFiles/oai_usrpdevif.dir/all] Error 2  
+CMakeFiles/Makefile2:1529: recipe for target 'CMakeFiles/oai_usrpdevif.dir/rule' failed  
+make[1]: *** [CMakeFiles/oai_usrpdevif.dir/rule] Error 2  
+Makefile:656: recipe for target 'oai_usrpdevif' failed  
+make: *** [oai_usrpdevif] Error 2  
+  
+===============  
+fixed:    
+**sudo ./build_oai -I -w USRP**  
+sudo ./build_oai --eNB -w USRP 
+
+
 # Running
 ## to run eNB
 > enter the directory:   **/openairinterface5g/cmake_targets/lte_build_oai/build**  
