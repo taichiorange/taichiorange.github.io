@@ -30,9 +30,9 @@ but CLONE is very slow and easy to abort, we can git clone it before "build_oai 
 then copy the repo to /tmp/asn1c
 
 ## 编译（非仿真情况）
-进入 openairinterface5g.git 仓库所在目录
-进入到 cmake_targets 子目录下
-执行如下命令：
+进入 openairinterface5g.git 仓库所在目录  
+进入到 cmake_targets 子目录下  
+执行如下命令：  
 >$ sudo ./build_oai --eNB --UE
 
 If you want to compile **UE** after modifying some codes ( do not comiple LIBs):
@@ -42,6 +42,11 @@ If you want to compile **UE** after modifying some codes ( do not comiple LIBs):
 If you want to **eNB** after modifying some codes ( do not comiple LIBs):
 > enter the directory:   **/openairinterface5g/cmake_targets/lte_build_oai/build**  
 > sudo make lte-softmodem
+
+
+
+
+
 
 ## PHY Simulation 编译
 >cd cmake_targets
