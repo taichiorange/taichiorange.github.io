@@ -19,7 +19,12 @@ PRACH Configuration Index determines when and where UE sends RACH.
 ![prach_ConfigIndex](http://taichiorange.github.io/images/lte_initial_attach/RACH_Configuration_Index.png)
 
 ## LTE RACH format
-![lte_rach_flow2](http://taichiorange.github.io/images/lte_initial_attach/xxx.png) 
+| LTE PRACH Preamble Format |	CP Length |	Sequence length |	Guard Time | 	Total Length |	Guard time equiv.dist. | 	Typical Max.cell range |
+| :------------- | :----------: | -----------: |-----------: |-----------: |-----------: |-----------: |-----------: |
+| 0 |	0.10ms |	0.8ms |	0.10ms |	1ms |	30Km |	15Km |
+| 1 |	0.68ms |	0.8ms |	0.52ms |	2ms |	156km |	78km |
+| 2 |	0.2ms |	1.6ms |	0.2ms |	2ms |	60Km |	30Km |
+| 3 |	0.68ms |	1.6ms |	0.72ms |	3ms |	216Km |	108Km |
 
 
 ## LTE RACH 流程图（含 RAR response window 图）
