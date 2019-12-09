@@ -24,8 +24,10 @@
 
 SIB2 结构说明--解释与 RACH 随机接入相关的字段：  
 
+sib2..prach-Config.rootSequenceIndex 30,  取值范围 0--837，这个是 index，有一张表对应实际的 u
+
 value BCCH-DL-SCH-Message ::=   
-  message c1 : systemInformation :   
+    message c1 : systemInformation :   
         criticalExtensions systemInformation-r8 :   
             sib-TypeAndInfo   
               sib2 :   
