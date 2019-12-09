@@ -8,7 +8,7 @@ u , 最大取值 837 ， as following:
 ![prach_zaddoff_chu_u](http://taichiorange.github.io/images/lte_initial_attach/Root_Zadoff_Chu_sequence_order_for_preamble_formats_0to3.PNG)  
 
 python 代码：  
-[rach_zaddoff_generate]:http://taichiorange.github.io/code/lte_prach/rach_zaddoff_chu_generate.py
+[rach_zaddoff_generate](http://taichiorange.github.io/code/lte_prach/rach_zaddoff_chu_generate.py)
 
 [RRC]   radioResourceConfigCommon.rach_ConfigCommon.preambleInfo.numberOfRA_Preambles  : raw:15 decoded:n64  
 [RRC]   radioResourceConfigCommon.rach_ConfigCommon.preambleInfo.preamblesGroupAConfig : not defined  
