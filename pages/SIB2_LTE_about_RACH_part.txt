@@ -1,3 +1,6 @@
+1) Generate a Zaddoff Chu sequence (849 samples) using rootSequenceIndex (let's call this sequence as 'base sequence')
+
+
 [RRC]   radioResourceConfigCommon.rach_ConfigCommon.preambleInfo.numberOfRA_Preambles  : raw:15 decoded:n64
 [RRC]   radioResourceConfigCommon.rach_ConfigCommon.preambleInfo.preamblesGroupAConfig : not defined
 [RRC]   radioResourceConfigCommon.rach_ConfigCommon.powerRampingParameters.powerRampingStep                   : raw:2 decoded:dB4
