@@ -54,7 +54,7 @@ value BCCH-DL-SCH-Message ::=
                       nB oneT
                      ,
                     prach-Config 
-                      rootSequenceIndex 30,
+                      rootSequenceIndex 30,  取值范围 0--837，这个是 index，有一张表对应实际的 u
                       prach-ConfigInfo 
                         prach-ConfigIndex 4,
                         highSpeedFlag FALSE,
