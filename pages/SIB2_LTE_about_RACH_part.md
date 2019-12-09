@@ -2,6 +2,7 @@
 
 ![prach_zaddoff_chu_formula](http://taichiorange.github.io/images/lte_initial_attach/36_211_Zadoff_RACH.PNG)
 
+Nzc indicate 'number of data in the ZaddOff Chu Sequence'. This number is fixed to be **839** in preamble format 1,2,3 and **139** in preamble format 4. 
 
 [RRC]   radioResourceConfigCommon.rach_ConfigCommon.preambleInfo.numberOfRA_Preambles  : raw:15 decoded:n64  
 [RRC]   radioResourceConfigCommon.rach_ConfigCommon.preambleInfo.preamblesGroupAConfig : not defined  
