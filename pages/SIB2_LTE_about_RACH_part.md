@@ -1,42 +1,42 @@
-1) Generate a Zaddoff Chu sequence (849 samples) using rootSequenceIndex (let's call this sequence as 'base sequence')
+1) Generate a Zaddoff Chu sequence (849 samples) using rootSequenceIndex (let's call this sequence as 'base sequence')  
 
 
-[RRC]   radioResourceConfigCommon.rach_ConfigCommon.preambleInfo.numberOfRA_Preambles  : raw:15 decoded:n64
-[RRC]   radioResourceConfigCommon.rach_ConfigCommon.preambleInfo.preamblesGroupAConfig : not defined
-[RRC]   radioResourceConfigCommon.rach_ConfigCommon.powerRampingParameters.powerRampingStep                   : raw:2 decoded:dB4
-[RRC]   radioResourceConfigCommon.rach_ConfigCommon.powerRampingParameters.preambleInitialReceivedTargetPower : raw:6 decoded:dBm-108
-[RRC]   radioResourceConfigCommon.rach_ConfigCommon.ra_SupervisionInfo.preambleTransMax              : raw:6 decoded:n10
-[RRC]   radioResourceConfigCommon.rach_ConfigCommon.ra_SupervisionInfo.ra_ResponseWindowSize         : raw:7 decoded:sf10
-[RRC]   radioResourceConfigCommon.rach_ConfigCommon.ra_SupervisionInfo.mac_ContentionResolutionTimer : raw:5 decoded:sf48
-[RRC]   radioResourceConfigCommon.rach_ConfigCommon.maxHARQ_Msg3Tx : 4
-[RRC]   radioResourceConfigCommon.bcch_Config.modificationPeriodCoeff : raw:0 decoded:n2
-[RRC]   radioResourceConfigCommon.pcch_Config.defaultPagingCycle : raw:2 decoded:rf64
-[RRC]   radioResourceConfigCommon.pcch_Config.nB                 : raw:2 decoded:oneT
-[RRC]   radioResourceConfigCommon.prach_Config.rootSequenceIndex                          : 0
-[RRC]   radioResourceConfigCommon.prach_Config.prach_ConfigInfo.prach_ConfigIndex         : 0
-[RRC]   radioResourceConfigCommon.prach_Config.prach_ConfigInfo.highSpeedFlag             : 0
-[RRC]   radioResourceConfigCommon.prach_Config.prach_ConfigInfo.zeroCorrelationZoneConfig : 1
-[RRC]   radioResourceConfigCommon.prach_Config.prach_ConfigInfo.prach_FreqOffset          : 2
+[RRC]   radioResourceConfigCommon.rach_ConfigCommon.preambleInfo.numberOfRA_Preambles  : raw:15 decoded:n64  
+[RRC]   radioResourceConfigCommon.rach_ConfigCommon.preambleInfo.preamblesGroupAConfig : not defined  
+[RRC]   radioResourceConfigCommon.rach_ConfigCommon.powerRampingParameters.powerRampingStep                   : raw:2 decoded:dB4  
+[RRC]   radioResourceConfigCommon.rach_ConfigCommon.powerRampingParameters.preambleInitialReceivedTargetPower : raw:6 decoded:dBm-108  
+[RRC]   radioResourceConfigCommon.rach_ConfigCommon.ra_SupervisionInfo.preambleTransMax              : raw:6 decoded:n10  
+[RRC]   radioResourceConfigCommon.rach_ConfigCommon.ra_SupervisionInfo.ra_ResponseWindowSize         : raw:7 decoded:sf10  
+[RRC]   radioResourceConfigCommon.rach_ConfigCommon.ra_SupervisionInfo.mac_ContentionResolutionTimer : raw:5 decoded:sf48  
+[RRC]   radioResourceConfigCommon.rach_ConfigCommon.maxHARQ_Msg3Tx : 4  
+[RRC]   radioResourceConfigCommon.bcch_Config.modificationPeriodCoeff : raw:0 decoded:n2  
+[RRC]   radioResourceConfigCommon.pcch_Config.defaultPagingCycle : raw:2 decoded:rf64  
+[RRC]   radioResourceConfigCommon.pcch_Config.nB                 : raw:2 decoded:oneT  
+[RRC]   radioResourceConfigCommon.prach_Config.rootSequenceIndex                          : 0  
+[RRC]   radioResourceConfigCommon.prach_Config.prach_ConfigInfo.prach_ConfigIndex         : 0  
+[RRC]   radioResourceConfigCommon.prach_Config.prach_ConfigInfo.highSpeedFlag             : 0  
+[RRC]   radioResourceConfigCommon.prach_Config.prach_ConfigInfo.zeroCorrelationZoneConfig : 1  
+[RRC]   radioResourceConfigCommon.prach_Config.prach_ConfigInfo.prach_FreqOffset          : 2  
 
 
 
 
 
-SIB2 结构说明--解释与 RACH 随机接入相关的字段：
+SIB2 结构说明--解释与 RACH 随机接入相关的字段：  
 
-value BCCH-DL-SCH-Message ::= 
-  message c1 : systemInformation : 
-        criticalExtensions systemInformation-r8 : 
-            sib-TypeAndInfo 
-              sib2 : 
-                  radioResourceConfigCommon 
-                    rach-ConfigCommon 
-                      preambleInfo 
-                        numberOfRA-Preambles n40,
-                        preamblesGroupAConfig 
-                          sizeOfRA-PreamblesGroupA n32,
-                          messageSizeGroupA b144,
-                          messagePowerOffsetGroupB dB10
+value BCCH-DL-SCH-Message ::=   
+  message c1 : systemInformation :   
+        criticalExtensions systemInformation-r8 :   
+            sib-TypeAndInfo   
+              sib2 :   
+                  radioResourceConfigCommon   
+                    rach-ConfigCommon   
+                      preambleInfo   
+                        numberOfRA-Preambles n40,  
+                        preamblesGroupAConfig   
+                          sizeOfRA-PreamblesGroupA n32,  
+                          messageSizeGroupA b144,  
+                          messagePowerOffsetGroupB dB10  
                        ,
                       powerRampingParameters 
                         powerRampingStep dB2,
