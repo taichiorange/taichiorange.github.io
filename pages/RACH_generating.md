@@ -17,6 +17,10 @@ There are 64 preambles available for each cell and UE has to be able to generate
 
 You can easily generate 64 different preambles just by cyclically shifting an existing sequence, but there is a condition for this. All the preamle sequences should be othogonal to each other. Otherwise, various preambles from multiple UEs within the same cell can interfere each other. So we have to shift the generated sequence by a specifically designed value and this value is called Cv (Cyclic Shift Value) and it is defined as follows. (I think determining the Cv is one of the most complicated process in PRACH preamble generation because it gets involved with so many different parameters in cascading manner).  
 
+Cv 按照如下公式生成：
+
+![prach_Cv](http://taichiorange.github.io/images/lte_initial_attach/PRACH_CyclicShift_Value.png)
+
 
 
 
