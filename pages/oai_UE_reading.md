@@ -47,6 +47,7 @@ _EMMAS_CELL_INFO_REQ = EMMAS_CELL_INFO_REQ , this msg sent by **_IdleMode_get_su
 .pdcp_fifo_flush_sdus() -- write into tunnel  
 
 # RACH 产生过程说明
+当收到 SIB2 数据的时候，下面第一个函数被调用，然后，根据 SIB2 中的数据，计算 prach (64个)
 phy_config_sib2_ue  
 --compute_prach_seq()  
 
