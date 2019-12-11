@@ -47,6 +47,8 @@ _EMMAS_CELL_INFO_REQ = EMMAS_CELL_INFO_REQ , this msg sent by **_IdleMode_get_su
 .pdcp_fifo_flush_sdus() -- write into tunnel  
 
 # RACH 产生过程说明
+phy_config_sib2_ue  
+--compute_prach_seq()  
 
 
 
