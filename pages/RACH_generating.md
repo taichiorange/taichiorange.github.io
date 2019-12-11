@@ -22,6 +22,15 @@ Cv 按照如下公式生成：
 ![prach_Cv](http://taichiorange.github.io/images/lte_initial_attach/PRACH_CyclicShift_Value.png)
 
 
+### 对于 unrestricted sets 情况
+根据 Nzc 和 Ncs 就可以计算出来 Cv.    
+> Ncs = 0 : Cv = 0  
+> Ncs != 0: Cv = v 乘以 Cv, 其中， v 取值按照上图范围来取。  
+？？？ 这里能保证得到 64 个 Cv 吗？  
+
+### restricted sets 情况
+这个情况复杂很多，需要知道如下四个数据：
+
 
 
 [RRC]   radioResourceConfigCommon.rach_ConfigCommon.preambleInfo.numberOfRA_Preambles  : raw:15 decoded:n64  
