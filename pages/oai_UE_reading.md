@@ -38,6 +38,10 @@ emm_sap_send
 
 Messages:  
 _EMMAS_CELL_INFO_REQ = EMMAS_CELL_INFO_REQ , this msg sent by **_IdleMode_get_suitable_cell()**  
+
+
+# RACH 
+
 ----AS_CELL_INFO_REQ  
 
 
