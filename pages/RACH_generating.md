@@ -4,13 +4,21 @@ Generate a Zaddoff Chu sequence (849 samples) using rootSequenceIndex (let's cal
 
 ![prach_zaddoff_chu_formula](http://taichiorange.github.io/images/lte_initial_attach/36_211_Zadoff_RACH.PNG)
 
-Nzc indicate 'number of data in the ZaddOff Chu Sequence'. This number is fixed to be **839** in preamble format 1,2,3 and **139** in preamble format 4. 
+Nzc indicate 'number of data in the ZaddOff Chu Sequence'. This number is fixed to be **839** in preamble format 0, 1,2,3 and **139** in preamble format 4, notes: format 4 is used only in TDD LTE. Refer to  table <36.211-Table 5.7.2-1: Random access preamble sequence length>  
 
-u , 最大取值 837 ， as following:
+u , 最大取值 837 ， as following in SIB2:
 ![prach_zaddoff_chu_u](http://taichiorange.github.io/images/lte_initial_attach/Root_Zadoff_Chu_sequence_order_for_preamble_formats_0to3.PNG)  
 
 python 代码：  
 [rach_zaddoff_generate](http://taichiorange.github.io/code/lte_prach/rach_zaddoff_chu_generate.py)
+
+## 生成 64 个 preambles
+There are 64 preambles available for each cell and UE has to be able to generate the 64 preambles for the cell it want to camp on.  
+
+You can easily generate 64 different preambles just by cyclically shifting an existing sequence, but there is a condition for this. All the preamle sequences should be othogonal to each other. Otherwise, various preambles from multiple UEs within the same cell can interfere each other. So we have to shift the generated sequence by a specifically designed value and this value is called Cv (Cyclic Shift Value) and it is defined as follows. (I think determining the Cv is one of the most complicated process in PRACH preamble generation because it gets involved with so many different parameters in cascading manner).  
+
+
+
 
 [RRC]   radioResourceConfigCommon.rach_ConfigCommon.preambleInfo.numberOfRA_Preambles  : raw:15 decoded:n64  
 [RRC]   radioResourceConfigCommon.rach_ConfigCommon.preambleInfo.preamblesGroupAConfig : not defined  
