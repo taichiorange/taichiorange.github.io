@@ -1,6 +1,6 @@
 # RACH generating
 ## 生成 zaddoff chu 序列
-Generate a Zaddoff Chu sequence (849 samples) using rootSequenceIndex (let's call this sequence as 'base sequence')  
+Generate a Zaddoff Chu sequence (839 or 139 samples) using rootSequenceIndex (let's call this sequence as 'base sequence')  
 
 ![prach_zaddoff_chu_formula](http://taichiorange.github.io/images/lte_initial_attach/36_211_Zadoff_RACH.PNG)
 
