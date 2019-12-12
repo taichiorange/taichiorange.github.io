@@ -21,6 +21,9 @@ Cv 按照如下公式生成：
 
 ![prach_Cv](http://taichiorange.github.io/images/lte_initial_attach/PRACH_CyclicShift_Value.png)
 
+### Ncs
+![prach_Ncs](http://taichiorange.github.io/images/lte_initial_attach/PRACH_Ncs.png)
+
 
 ### 对于 unrestricted sets 情况
 根据 Nzc 和 Ncs 就可以计算出来 Cv.    
