@@ -51,5 +51,9 @@ _EMMAS_CELL_INFO_REQ = EMMAS_CELL_INFO_REQ , this msg sent by **_IdleMode_get_su
 phy_config_sib2_ue  
 ----compute_prach_seq()  
 
+## PRACH Sending flow
+ue_prach_procedures()
+----generate_prach()
+
 
 
