@@ -6,6 +6,10 @@ Generate a Zaddoff Chu sequence (839 or 139 samples) using rootSequenceIndex (le
 
 Nzc indicate 'number of data in the ZaddOff Chu Sequence'. This number is fixed to be **839** in preamble format 0, 1,2,3 and **139** in preamble format 4, notes: format 4 is used only in TDD LTE. Refer to  table <36.211-Table 5.7.2-1: Random access preamble sequence length>  
 
+## format
+The answer is 'eNB determines it via prach-Configindex IE in SIB2'. Refer to prach-ConfigIndex section for the details.
+![prach_configIndex](http://taichiorange.github.io/images/lte_initial_attach/LTE_PRACH_ConfigIndex_PreambleFormat_01.png)  
+
 u , 最大取值 837 ， as following in SIB2:
 ![prach_zaddoff_chu_u](http://taichiorange.github.io/images/lte_initial_attach/Root_Zadoff_Chu_sequence_order_for_preamble_formats_0to3.PNG)  
 
