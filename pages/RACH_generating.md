@@ -46,5 +46,5 @@ Cv 按照如下公式生成：
 sib2..prach-Config.rootSequenceIndex 30,  取值范围 0--837，这个是 index，有一张表对应实际的 u  
 
 
-![prach_SIB2_parameters](http://taichiorange.github.io/images/RACH_SIB2_Parameters.png)
+![prach_SIB2_parameters](http://taichiorange.github.io/images/lte_initial_attach/RACH_SIB2_Parameters.png)
 
