@@ -23,14 +23,14 @@ u , 最大取值 837 ， as following in SIB2:
 python 代码：  
 [rach_zaddoff_generate](http://taichiorange.github.io/code/lte_prach/rach_zaddoff_chu_generate.py)
 
-## 生成 64 个 preambles
+## 生成 64 个 循环移位的位数
 There are 64 preambles available for each cell and UE has to be able to generate the 64 preambles for the cell it want to camp on.  
 
 You can easily generate 64 different preambles just by cyclically shifting an existing sequence, but there is a condition for this. All the preamle sequences should be othogonal to each other. Otherwise, various preambles from multiple UEs within the same cell can interfere each other. So we have to shift the generated sequence by a specifically designed value and this value is called Cv (Cyclic Shift Value) and it is defined as follows. (I think determining the Cv is one of the most complicated process in PRACH preamble generation because it gets involved with so many different parameters in cascading manner).  
 
 Cv 按照如下公式生成：
 
-![prach_Cv](http://taichiorange.github.io/images/lte_initial_attach/PRACH_CyclicShift_Value.png)
+ PRACH_x_uv.png
 
 ### Ncs
 ![prach_Ncs](http://taichiorange.github.io/images/lte_initial_attach/PRACH_Ncs.PNG)
@@ -46,6 +46,8 @@ Cv 按照如下公式生成：
 这个情况复杂很多，需要知道如下四个数据：
 
 
+## 循环移位
+![prach_x_uv](http://taichiorange.github.io/images/lte_initial_attach/PRACH_x_uv.png) 
 
 
 # SIB2 结构说明--解释与 RACH 随机接入相关的字段 
