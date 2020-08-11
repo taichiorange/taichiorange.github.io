@@ -2,10 +2,10 @@
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
 $$
-$$ \left ( \begin{matrix}
- a_{1}&  b_{2}^{3}& c\\ 
+ \left ( \begin{matrix}
+ a_{1}&  b_{2}^{5}& c\\ 
  d&  w& f
-\end{matrix} \right ) $$
+\end{matrix} \right ) 
 $$
 
 
