@@ -4,7 +4,7 @@
 
 
 
-[第一步：安装 python 及其环境](/pages/python_teaching/anaconda_install.html)
+[第一步：安装 python 及其环境](/python_teaching/anaconda_install.html)
 
 
 欢迎关注公众号：乐吧的数学是一种思想 
