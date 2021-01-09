@@ -34,5 +34,5 @@
 
 如下图所示
 
-![配置](./imgs/spyder_config_plot_not_inline.png)
+![配置](/pages/pyton_teaching/imgs/spyder_config_plot_not_inline.png)
 

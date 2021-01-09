@@ -4,5 +4,5 @@
 
 
 
-[第一步：安装 python 及其环境](./anaconda_install.html)
+[第一步：安装 python 及其环境](/pages/python_teaching/anaconda_install.html)
 
