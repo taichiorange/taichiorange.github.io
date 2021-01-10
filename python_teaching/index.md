@@ -10,4 +10,5 @@
 
 
 欢迎关注公众号：乐吧的数学是一种思想 
+![qr code](/python_teaching/qrcode.jpg)
 
