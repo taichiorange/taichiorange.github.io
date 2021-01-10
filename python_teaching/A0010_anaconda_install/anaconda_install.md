@@ -13,7 +13,9 @@
 官网地址：https://www.anaconda.com/
 官网免费个人版本下载地址：https://www.anaconda.com/products/individual  （如果这个地址失效了，就在官网中寻找  individual 版本
 另外，我在百度网盘中会维护一个下载目录，保存了windows平台下的 anaconda 安装包，可能会稍微落后于官网的版本，如果官网版本找不到，或者下载很慢，就尝试这个百度网盘链接（有压缩包和非压缩包，二选一即可）：
-链接: https://pan.baidu.com/s/1XBa5helNtLiETYr89Hv7hQ 提取码: d46w 
+链接: https://pan.baidu.com/s/1XBa5helNtLiETYr89Hv7hQ 
+
+提取码: d46w 
 
 # 安装
 
@@ -34,7 +36,7 @@
 
 如下图所示
 
-![配置](/python_teaching/imgs/spyder_config_plot_not_inline.png)
+![配置](/python_teaching/A0010_anaconda_install/spyder_config_plot_not_inline.png)
 
 
 欢迎关注微信公众号：乐吧的数学是一种思想 
