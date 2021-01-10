@@ -39,5 +39,5 @@
 ![配置](/python_teaching/A0010_anaconda_install/spyder_config_plot_not_inline.png)
 
 
-欢迎关注微信公众号：乐吧的数学是一种思想 
+欢迎关注微信公众号：乐吧的数学是一种思想  
 ![qr code](/python_teaching/qrcode.jpg)

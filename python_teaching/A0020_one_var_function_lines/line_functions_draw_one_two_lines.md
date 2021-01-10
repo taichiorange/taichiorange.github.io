@@ -58,5 +58,5 @@ plt.plot(xlist,ylist,".",xlist,y1list,".")
 ```
 ![配置](/python_teaching/A0020_one_var_function_lines/two_lines_two_functions.png)
 
-欢迎关注微信公众号：乐吧的数学是一种思想 
+欢迎关注微信公众号：乐吧的数学是一种思想  
 ![qr code](/python_teaching/qrcode.jpg)
