@@ -4,9 +4,9 @@
 
 
 
-[第一步：安装 python 及其环境](/python_teaching/A0010_anaconda_install/anaconda_install.html)  
-[一个猜数字的小游戏](/python_teaching/A0030_guess_number_game_simple/guess_number_game_simple.html)  
-[一元一次方程对应直线](/python_teaching/A0020_one_var_function_lines/line_functions_draw_one_two_lines.html)  
+[.第一步：安装 python 及其环境](/python_teaching/A0010_anaconda_install/anaconda_install.html)  
+[.一个猜数字的小游戏](/python_teaching/A0030_guess_number_game_simple/guess_number_game_simple.html)  
+[.一元一次方程对应直线](/python_teaching/A0020_one_var_function_lines/line_functions_draw_one_two_lines.html)  
 
 
 欢迎关注公众号：乐吧的数学是一种思想 
