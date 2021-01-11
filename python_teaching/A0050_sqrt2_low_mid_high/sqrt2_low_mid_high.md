@@ -1,3 +1,9 @@
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+
+
 # 折半查找计算根号 2
 
 这个案例是用折半查找的思想来计算根号 2，在讲这个程序之前，要先根孩子们聊聊什么是根号 2，更进一步可以聊聊由于根号2的发现，导致第一次数学危机的故事。进而可以聊聊有理数和有理数，以及数轴上的点只用有理数是否都能表示出来。
