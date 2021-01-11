@@ -26,3 +26,6 @@ while 1==1:
 print(S)
 
 ```
+
+欢迎关注微信公众号：乐吧的数学是一种思想  
+![qr code](/python_teaching/qrcode.jpg)
