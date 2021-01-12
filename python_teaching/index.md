@@ -8,7 +8,7 @@
 [.一个猜数字的小游戏](/python_teaching/A0030_guess_number_game_simple/guess_number_game_simple.html)  
 [.一元一次方程对应直线](/python_teaching/A0020_one_var_function_lines/line_functions_draw_one_two_lines.html)   
 [.计算曲边梯形面积--积分初步](/python_teaching/A0040_integration_primer_x_squre/integration_primer_x_squre.html )  
-[.用折半查找的方式计算根号 2](/python_teaching/A0050_sqrt2_low_mid_high/sqrt2_low_mid_high.html)
+[.用折半查找的方式计算根号 2](/python_teaching/A0050_sqrt2_low_mid_high/sqrt2_low_mid_high.html)  
 [.用 turtle 画简单的图形](/python_teaching/A0060_turtle_01_simple_drawing/turtle_01_simple_drawing.html)
 
 
