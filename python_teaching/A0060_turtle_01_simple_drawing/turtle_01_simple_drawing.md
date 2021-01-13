@@ -25,11 +25,21 @@ for i in range(1,6):
 
 s.mainloop()
 ```
-
-
-
-再比如把右转的角度调整为一个不是整除180的，例如133度，随着画线的条数的增加，会呈现出不同的感觉：
 ！[five_angles](/python_teaching/A0060_turtle_01_simple_drawing/36_6.png)
+
+
+再比如把右转的角度调整为一个不是整除180的，例如133度，随着画线的条数的增加，会呈现出不同的感觉：  
+右转133度，画10条线的效果  
+！[five_angles](/python_teaching/A0060_turtle_01_simple_drawing/133_10.png)  
+右转133度，画30条线的效果  
+！[five_angles](/python_teaching/A0060_turtle_01_simple_drawing/133_30.png)  
+右转133度，画130条线的效果  
+！[five_angles](/python_teaching/A0060_turtle_01_simple_drawing/133_130.png)  
+
+如果右转178度，比较接近直接折返的时候，又有另外一番效果：
+右转178度，画330条线的效果  
+！[five_angles](/python_teaching/A0060_turtle_01_simple_drawing/178_330.png)  
+
 
 
 
