@@ -22,5 +22,5 @@ s.mainloop()
 ![rainbow](/python_teaching/A0070_turtle_02_rainbow_benzene/rainbow_benzene.png){: .center-image }
 
 
-->欢迎关注微信公众号：乐吧的数学是一种思想<-  
-![qr code](/python_teaching/qrcode.jpg){: .center-image }
+欢迎关注微信公众号：乐吧的数学是一种思想  
+![qr code](/python_teaching/qrcode.jpg)
