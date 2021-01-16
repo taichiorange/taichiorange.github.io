@@ -14,7 +14,7 @@
 [.计算曲边梯形面积--积分初步](/python_teaching/A0040_integration_primer_x_squre/integration_primer_x_squre.html )  
 [.用折半查找的方式计算根号 2](/python_teaching/A0050_sqrt2_low_mid_high/sqrt2_low_mid_high.html)  
 [.用 turtle 画简单的图形](/python_teaching/A0060_turtle_01_simple_drawing/turtle_01_simple_drawing.html)  
-[.用 turtle 画彩虹环图形](/python_teaching/A0070_turtle_02_rainbow_benzene/turtle_02_rainbow_benzene.md)
+[.用 turtle 画彩虹环图形](/python_teaching/A0070_turtle_02_rainbow_benzene/turtle_02_rainbow_benzene.html)
 
 
 欢迎关注公众号：乐吧的数学是一种思想  
