@@ -66,14 +66,28 @@ $$
 log\frac{1}{p(a_i)}-log\frac{1}{p(a_i/b_j)}=log\frac{p(a_i/b_j)}{p(a_i)}
 $$
 
+这个式子可以进一步推导：
+$$
+\begin{aligned}
+log\frac{1}{p(a_i)}-log\frac{1}{p(a_i/b_j)}&=log\frac{p(a_i/b_j)}{p(a_i)} \\
+   &=log\frac{p(a_i b_j)/p(b_j)}{p(a_i)} \\
+   &=log\frac{p(a_i b_j)}{p(a_i)p(b_j)}   \qquad  这是站在XY总体立场的公式\\
+   &=log\frac{p(b_j/a_i)p(a_i)}{p(a_i)p(b_j)} \\
+   &=log\frac{p(b_j/a_i)}{p(b_j)} \qquad  这是站在 X 立场的公式
+\end{aligned}
+$$
+
 ### 接收者站在 X 的立场 以及接收者站在 XY 的总体立场
 
 这两种情况就不赘述了，请参考《信息论与编码--姜丹第四版》2.1.3 章节。
 
-# **两个随机变量之间的平均互信息量**
+## **两个随机变量之间的平均互信息量**
 
-对于两个确定符号间的互信息量，还不能反映信道的平均信息量，需要对所有特定符号的互信息量，按照概率来取平均：
+对于两个确定符号间的互信息量，还不能反映信道的平均信息量，需要对所有特定符号的互信息量，按照概率来取平均
 
+### 接收者站在 Y 的立场
+
+接收到  $b_j$ 前 $a_i$  的不确定性，减去收到  $b_j$ 后 $a_i$ 的不确定性，按照 $a_i$ 和 $b_j$ 的联合概率来计算平均：
 $$
 \begin{aligned}
 &\sum_{i=1}^r \sum_{j=1}^s p(a_i b_j) [log\frac{1}{p(a_i)}-log\frac{1}{p(a_i/b_j)}] \\
@@ -82,8 +96,18 @@ $$
 \end{aligned}
 $$
 
+如果 X 固定为某个确定的 $ a_i $, 则 发送 $a_i$，得到的平均信息量为：
+$$
+\begin{aligned}
+&\sum_{j=1}^s p(a_i b_j) [log\frac{1}{p(a_i)}-log\frac{1}{p(a_i/b_j)}] \\
+&=\sum_{j=1}^s p(a_i b_j)log\frac{p(a_i/b_j)}{p(a_i)} \\
+&=-\sum_{j=1}^s p(a_i b_j)p(a_i)-[\sum_{j=1}^s p(a_i b_j)p(a_i/b_j)]
+\end{aligned}
+$$
 
+### 接收者站在 X 的立场 以及接收者站在 XY 的总体立场
 
+这两种情况就不赘述了，请参考《信息论与编码--姜丹第四版》2.1.4 章节。
 
 
 
