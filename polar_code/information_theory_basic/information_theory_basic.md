@@ -105,6 +105,23 @@ $$
 \end{aligned}
 $$
 
+可以对上面这个公式进一步推导：
+$$
+\begin{aligned}
+&\sum_{j=1}^s p(a_i b_j) [log\frac{1}{p(a_i)}-log\frac{1}{p(a_i/b_j)}] \\
+&=\sum_{j=1}^s p(a_i b_j)log\frac{p(a_i/b_j)}{p(a_i)} \\
+&=\sum_{j=1}^s p(a_i b_j)log\frac{p(a_i b_j)/p(b_j)}{p(a_i)} \\
+&=\sum_{j=1}^s p(a_i b_j)log\frac{p(a_i b_j)}{p(a_i)p(b_j)} \\
+&=\sum_{j=1}^s p(a_i b_j)log\frac{p(b_j/a_i)p(a_i)}{p(a_i)p(b_j)} \\
+&=\sum_{j=1}^s p(a_i b_j)log\frac{p(b_j/a_i)}{p(b_j)}  \\
+&=\sum_{j=1}^s p(a_i b_j)log\frac{p(b_j/a_i)}{\sum_{i=1}^{r} p(a_i b_j)}  \\
+&=\sum_{j=1}^s p(a_i b_j)log\frac{p(b_j/a_i)}{\sum_{i=1}^{r} p(a_i)p(b_j/a_i )}  
+\end{aligned}
+$$
+
+
+
+
 ### 接收者站在 X 的立场 以及接收者站在 XY 的总体立场
 
 这两种情况就不赘述了，请参考《信息论与编码--姜丹第四版》2.1.4 章节。
