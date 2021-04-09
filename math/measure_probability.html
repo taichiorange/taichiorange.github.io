@@ -1,0 +1,131 @@
+<html><head><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/vditor@3.6.0/dist/index.css"/>
+<script src="https://cdn.jsdelivr.net/npm/vditor@3.6.0/dist/method.min.js"></script></head>
+<body><div class="vditor-reset" id="preview"><h1 id="代数系统---半群---幺半群---群---交换群">代数系统--&gt;半群--&gt;幺半群--&gt;群--&gt;交换群</h1>
+<h2 id="群的定义">群的定义</h2>
+<blockquote>
+<blockquote>
+<p>如果一个非空集合 <span class="vditor-math">G</span> 上定义了一个二元运算 <span class="vditor-math"> \bullet </span>，满足如下性质：<br />
+（1）封闭性，即对于 <span class="vditor-math"> \forall a,b \in G</span>，有 <span class="vditor-math"> a\bullet b \in G</span>;<br />
+（2）结合律，即对于 <span class="vditor-math"> \forall a,b,c \in G</span>，有 <span class="vditor-math"> (a\bullet b)\bullet c= a\bullet (b\bullet c)</span> ；<br />
+（3）存在 <span class="vditor-math">e\in G</span>，使得 <span class="vditor-math">\forall a \in G</span> ，有 <span class="vditor-math"> e \bullet a = a \bullet e = a </span> ；<br />
+（4）对于<span class="vditor-math">\forall a \in G</span> ，存在 <span class="vditor-math"> b \in G</span>，使得 <span class="vditor-math"> a \bullet b = b \bullet a = e</span>  ，<br />
+则称 <span class="vditor-math">G</span>  关于运算 <span class="vditor-math">\bullet</span> 构成一个<strong>群</strong>（group），记为 <span class="vditor-math">(G,\bullet)</span>，或简记为  <span class="vditor-math">G</span>。</p>
+</blockquote>
+</blockquote>
+<p>上述定义中，第（3）条中的元素 <span class="vditor-math">e</span> 称为<strong>单位元</strong>（identity），第（4）条中的 ![[公式]] <span class="vditor-math">b</span> 称为 <span class="vditor-math">a</span> 的<strong>逆元</strong>（inverse），通常也记作 <span class="vditor-math">a^{-1}</span> 。只成立（1）的集合 <span class="vditor-math">G </span> 称为<strong>原群</strong>（magma）；只成立（1）（2）的集合 <span class="vditor-math">G</span> 称为<strong>半群</strong>（semigroup）；只成立（1）（2）（3）的集合  <span class="vditor-math">G</span> 称为<strong>幺半群</strong>（monoid）</p>
+<p>原群，应该就是一个代数系统，即一个非空集合上定义了一个或者若干个运算，只要满足封闭性，就构成了一个代数系统.</p>
+<p><strong>原群</strong> + 结合律 = <strong>半群</strong><br />
+<strong>半群</strong> + 幺元 = <strong>幺半群</strong><br />
+<strong>幺半群</strong> + 逆元 = <strong>群</strong></p>
+<h3 id="交换群的定义">交换群的定义</h3>
+<p>如果一个群 <span class="vditor-math">G</span> 中的任意两个元素 <span class="vditor-math">a,b</span> 都满足 <span class="vditor-math">a \bullet b = b \bullet a</span> ，则该群称为<strong>交换群</strong>或<strong>Abel群</strong>。</p>
+<h2 id="环的定义">环的定义</h2>
+<p>环是带有两种二元运算，并且这些运算满足一定运算律的集合。</p>
+<blockquote>
+<p>环的定义<br />
+如果一个非空集合 <span class="vditor-math">R</span> 上定义了两个二元运算 <span class="vditor-math">+</span> 和 <span class="vditor-math">\bullet</span>，分别称为加法和乘法，满足：<br />
+（1） <span class="vditor-math">(R,+)</span> 是Abel群<br />
+（2）<span class="vditor-math">(R,\bullet)</span> 是半群<br />
+（3）乘法对于加法满足左分配律、右分配律，即对于 <span class="vditor-math">\forall a,b,c \in R</span>，有<span class="vditor-math">(a+b)\bullet c = a\bullet c + b\bullet c </span> 且 <span class="vditor-math"> c \bullet (a+b)= c \bullet a + c \bullet b</span><br />
+则称 <span class="vditor-math">R</span> 关于运算 <span class="vditor-math">+,\bullet</span> 构成一个<strong>环</strong>（ring），记为 <span class="vditor-math">(R,+,\bullet)</span>，或简记为 <span class="vditor-math">R</span></p>
+</blockquote>
+<h1 id="集合论里面的-环-ring--代数-algebra---环和--代数">集合论里面的 环(ring)、代数(algebra)、<span class="vditor-math"> \sigma</span>-环和 <span class="vditor-math"> \sigma</span>-代数</h1>
+<p>R 是 集类，即由集合 X 的子集构成的集合<br />
+A, B 是 X 的子集，且 <span class="vditor-math"> A \in R</span> 和 <span class="vditor-math">B \in R</span><br />
+<span class="vditor-math">A_1,A_2,\cdots,A_n,\cdots \in R </span></p>
+<p>定义:</p>
+<table>
+<thead>
+<tr>
+<th align="left">ring</th>
+<th align="left">algebra</th>
+<th align="center"><span class="vditor-math">\sigma-ring</span></th>
+<th align="center"><span class="vditor-math">\sigma-algebra</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><span class="vditor-math">\phi \in R</span></td>
+<td align="left"><span class="vditor-math">\phi \in R</span></td>
+<td align="center"><span class="vditor-math">\phi \in R</span></td>
+<td align="center"><span class="vditor-math">\phi \in R</span></td>
+</tr>
+<tr>
+<td align="left"><span class="vditor-math">A\setminus B \in R</span></td>
+<td align="left"><span class="vditor-math">A\setminus B \in R</span></td>
+<td align="center"><span class="vditor-math">A\setminus B \in R</span></td>
+<td align="center"><span class="vditor-math">A\setminus B \in R</span></td>
+</tr>
+<tr>
+<td align="left"><span class="vditor-math">A \cup B \in R </span></td>
+<td align="left"><span class="vditor-math">A \cup B \in R </span></td>
+<td align="center"><span class="vditor-math">\cup_i Ai \in R \\ 可列可数无穷并</span></td>
+<td align="center"><span class="vditor-math">\cup_i Ai \in R \\ 可列可数无穷并</span></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"><span class="vditor-math">X \in R</span></td>
+<td align="center"></td>
+<td align="center"><span class="vditor-math">X \in R</span></td>
+</tr>
+</tbody>
+</table>
+<p>其中 algebra 的定义，可以把第一个，第二个和第四个这三个条件替换成一个条件 <span class="vditor-math"> A^c \in R</span>，其中 <span class="vditor-math">A^c</span> 表示 <span class="vditor-math">A</span> 的补集. 根据这一条，可以推导出其它三条都成立:</p>
+<blockquote>
+<p>假如 子集 <span class="vditor-math">A</span> 是 algebra 中的元素，那么 <span class="vditor-math">A^c</span> 也是 algebra 中的元素，根据第三条性质，则 <span class="vditor-math"> A \cup A^c=X</span>，即全集是 algebra 中的元素，那么 <span class="vditor-math">\phi</span> 也是 algebra 中的元素.</p>
+</blockquote>
+<p>根据定义，可以推导出的几个性质:</p>
+<table>
+<thead>
+<tr>
+<th align="left">ring</th>
+<th align="left">algebra</th>
+<th align="center"><span class="vditor-math">\sigma-ring</span></th>
+<th align="center"><span class="vditor-math">\sigma-algebra</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><span class="vditor-math">\cup_{i=1}^n A_i \in R \\ 有限多个并</span></td>
+<td align="left"><span class="vditor-math">\cup_{i=1}^n A_i \in R \\ 有限多个并</span></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="left"><span class="vditor-math"> A\cap B  \in R</span></td>
+<td align="left"><span class="vditor-math"> A\cap B  \in R</span></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="left"><span class="vditor-math">\cap_{i=1}^n A_i \in R \\ 有限多个交</span></td>
+<td align="left"><span class="vditor-math">\cap_{i=1}^n A_i \in R \\ 有限多个交</span></td>
+<td align="center"><span class="vditor-math">\cap_i A_i \in R \\ 可列可数无穷交</span></td>
+<td align="center"><span class="vditor-math">\cap_i A_i \in R \\ 可列可数无穷交</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>集合论中的环(ring)，与高等代数中定义的环有什么联系？为什么都称之为环？</strong><br />
+高等代数中定义的环，是在一个集合上，定义了两个运算，称之为加法和乘法，在这个集合上，这两个运算是封闭的，以及其他一些要求（此处就不详细展开了）.</p>
+<p>我们可以在 R 上，定义：</p>
+<div class="vditor-math">A+B=A \triangle B = (A \setminus B) \cup (B \setminus A) \\
+A \bullet B = A \cap B</div>
+<p>可以证明 <span class="vditor-math">(R,+,\bullet)  </span> 构成了一个高等代数上的环.</p>
+</div>
+<script>
+    const previewElement = document.getElementById('preview')
+    Vditor.setContentTheme('light', 'https://cdn.jsdelivr.net/npm/vditor@3.6.0/dist/css/content-theme');
+    Vditor.codeRender(previewElement, 'zh_CN');
+    Vditor.highlightRender({"enable":true,"lineNumber":false,"style":"github"}, previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.6.0');
+    Vditor.mathRender(previewElement, {
+        cdn: 'https://cdn.jsdelivr.net/npm/vditor@3.6.0',
+        math: {"engine":"KaTeX","inlineDigit":false,"macros":{}},
+    });
+    Vditor.mermaidRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.6.0');
+    Vditor.flowchartRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.6.0');
+    Vditor.graphvizRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.6.0');
+    Vditor.chartRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.6.0');
+    Vditor.mindmapRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.6.0');
+    Vditor.abcRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.6.0');
+    Vditor.mediaRender(previewElement);
+</script></body></html>

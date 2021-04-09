@@ -1,0 +1,74 @@
+# 代数系统-->半群-->幺半群-->群-->交换群
+
+## 群的定义
+
+> > 如果一个非空集合 $G$ 上定义了一个二元运算 $ \bullet $，满足如下性质：
+> > （1）封闭性，即对于 $ \forall a,b \in G$，有 $ a\bullet b \in G$;
+> > （2）结合律，即对于 $ \forall a,b,c \in G$，有 $ (a\bullet b)\bullet c= a\bullet (b\bullet c)$ ；
+> > （3）存在 $e\in G$，使得 $\forall a \in G$ ，有 $ e \bullet a = a \bullet e = a $ ；
+> > （4）对于$\forall a \in G$ ，存在 $ b \in G$，使得 $ a \bullet b = b \bullet a = e$  ，
+> > 则称 $G$  关于运算 $\bullet$ 构成一个**群**（group），记为 $(G,\bullet)$，或简记为  $G$。
+
+上述定义中，第（3）条中的元素 $e$ 称为**单位元**（identity），第（4）条中的 ![[公式]] $b$ 称为 $a$ 的**逆元**（inverse），通常也记作 $a^{-1}$ 。只成立（1）的集合 $G $ 称为**原群**（magma）；只成立（1）（2）的集合 $G$ 称为**半群**（semigroup）；只成立（1）（2）（3）的集合  $G$ 称为**幺半群**（monoid）
+
+原群，应该就是一个代数系统，即一个非空集合上定义了一个或者若干个运算，只要满足封闭性，就构成了一个代数系统.
+
+**原群** + 结合律 = **半群**
+**半群** + 幺元 = **幺半群**
+**幺半群** + 逆元 = **群**
+
+### 交换群的定义
+
+如果一个群 $G$ 中的任意两个元素 $a,b$ 都满足 $a \bullet b = b \bullet a$ ，则该群称为**交换群**或**Abel群**。
+
+## 环的定义
+
+环是带有两种二元运算，并且这些运算满足一定运算律的集合。
+
+> 环的定义
+> 如果一个非空集合 $R$ 上定义了两个二元运算 $+$ 和 $\bullet$，分别称为加法和乘法，满足：
+> （1） $(R,+)$ 是Abel群
+> （2）$(R,\bullet)$ 是半群
+> （3）乘法对于加法满足左分配律、右分配律，即对于 $\forall a,b,c \in R$，有$(a+b)\bullet c = a\bullet c + b\bullet c $ 且 $ c \bullet (a+b)= c \bullet a + c \bullet b$
+> 则称 $R$ 关于运算 $+,\bullet$ 构成一个**环**（ring），记为 $(R,+,\bullet)$，或简记为 $R$
+
+# 集合论里面的 环(ring)、代数(algebra)、$ \sigma$-环和 $ \sigma$-代数
+
+R 是 集类，即由集合 X 的子集构成的集合
+A, B 是 X 的子集，且 $ A \in R$ 和 $B \in R$
+$A_1,A_2,\cdots,A_n,\cdots \in R $
+
+定义:
+
+| ring       | algebra |  $\sigma-ring$  | $\sigma-algebra$|
+| :--------  | :-----  | :----:  |:----:  |
+| $\phi \in R$ |$\phi \in R$ |$\phi \in R$|$\phi \in R$|
+|$A\setminus B \in R$  |$A\setminus B \in R$|$A\setminus B \in R$|$A\setminus B \in R$|
+| $A \cup B \in R $ |$A \cup B \in R $ |$\cup_i Ai \in R \\ 可列可数无穷并$ |$\cup_i Ai \in R \\ 可列可数无穷并$|
+|  |$X \in R$ ||$X \in R$|
+
+其中 algebra 的定义，可以把第一个，第二个和第四个这三个条件替换成一个条件 $ A^c \in R$，其中 $A^c$ 表示 $A$ 的补集. 根据这一条，可以推导出其它三条都成立:
+
+> 假如 子集 $A$ 是 algebra 中的元素，那么 $A^c$ 也是 algebra 中的元素，根据第三条性质，则 $ A \cup A^c=X$，即全集是 algebra 中的元素，那么 $\phi$ 也是 algebra 中的元素.
+
+根据定义，可以推导出的几个性质:
+
+| ring       | algebra |  $\sigma-ring$  | $\sigma-algebra$|
+| :--------  | :-----  | :----:  |:----:  |
+| $\cup_{i=1}^n A_i \in R \\ 有限多个并$|$\cup_{i=1}^n A_i \in R \\ 有限多个并$  | ||
+|$ A\cap B  \in R$ |$ A\cap B  \in R$  | ||
+| $\cap_{i=1}^n A_i \in R \\ 有限多个交$ | $\cap_{i=1}^n A_i \in R \\ 有限多个交$  | $\cap_i A_i \in R \\ 可列可数无穷交$| $\cap_i A_i \in R \\ 可列可数无穷交$|
+
+**集合论中的环(ring)，与高等代数中定义的环有什么联系？为什么都称之为环？**
+高等代数中定义的环，是在一个集合上，定义了两个运算，称之为加法和乘法，在这个集合上，这两个运算是封闭的，以及其他一些要求（此处就不详细展开了）.
+
+我们可以在 R 上，定义：
+
+$$
+A+B=A \triangle B = (A \setminus B) \cup (B \setminus A) \\
+A \bullet B = A \cap B
+$$
+
+可以证明 $(R,+,\bullet)  $ 构成了一个高等代数上的环.
+
+
