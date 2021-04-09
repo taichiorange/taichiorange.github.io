@@ -106,7 +106,7 @@ $A_1,A_2,\cdots,A_n,\cdots \in R $
 
 定义:
 
-| ring       | algebra |  $\sigma-ring$  | $\sigma-algebra$|
+| ring       | algebra(也称 field) |  $\sigma-ring$  | $\sigma-algebra(\sigma-field)$ |
 | :--------  | :-----  | :----:  |:----:  |
 | $\phi \in R$ |$\phi \in R$ |$\phi \in R$|$\phi \in R$|
 |$A\setminus B \in R$  |$A\setminus B \in R$|$A\setminus B \in R$|$A\setminus B \in R$|
@@ -116,6 +116,8 @@ $A_1,A_2,\cdots,A_n,\cdots \in R $
 其中 algebra 的定义，可以把第一个，第二个和第四个这三个条件替换成一个条件 $ A^c \in R$，其中 $A^c$ 表示 $A$ 的补集. 根据这一条，可以推导出其它三条都成立:
 
 > 假如 子集 $A$ 是 algebra 中的元素，那么 $A^c$ 也是 algebra 中的元素，根据第三条性质，则 $ A \cup A^c=X$，即全集是 algebra 中的元素，那么 $\phi$ 也是 algebra 中的元素.
+
+可以看到 **ring** 对**并**和**差**封闭；**algebra** 对**并**和**补**封闭. 
 
 根据定义，可以推导出的几个性质:
 
