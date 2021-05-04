@@ -177,7 +177,7 @@ $$
 为了区分系统 g 的输入与系统的内在参数，我们可以把上面的式子改写为:
 
 $$
-y(t,\zeta)=T_{t,\zeta}(\{x(\tau,\zeta),\tau\in   \})  \\
+y(t,\zeta)=g_{t,\zeta}(\{x(\tau,\zeta),\tau\in   \})  \\
 t \in T, \zeta \in S
 $$
 
