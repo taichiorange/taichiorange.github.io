@@ -168,8 +168,18 @@ $$
 # 随机过程输入一个系统 T
 
 $$
-y(t,\zeta)=T(\{x(\tau,\zeta),\tau\in  \mathcal{I} \},t,\zeta)  \\
+y(t,\zeta)=T(\{x(\tau,\zeta),\tau\in  T\},t,\zeta)  \\
 t \in T, \zeta \in S
 $$
 
 其中 $ \tau $ 表示的时间，为了与后面的 t 区分开，所以，用了字母 $\tau$.
+
+为了区分系统 T 的输入与系统的内在参数，我们可以把上面的式子改写为:
+
+$$
+y(t,\zeta)=T_{t,\zeta}(\{x(\tau,\zeta),\tau\in  T \})  \\
+t \in T, \zeta \in S
+$$
+
+第二种写法中，系统 T 的下标，表示的是 T 的参数，用以表征这个系统的特点的，即 $t, \zeta$ 是系统 T 的参数。
+这个系统的输入为 $\{x(\tau,\zeta),\tau\in  T \}$
