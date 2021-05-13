@@ -185,3 +185,32 @@ $$
 这个系统的输入为 $\{x(\tau,\zeta),\tau\in  T \}$.
 
 实际上可以把系统 g 理解为一个函数或者一个映射(mapping)。
+
+# 概率中的几个不等式
+
+## Markov不等式（Markov's Inequality）
+
+中文名又叫马尔科夫不等式或马尔可夫不等式，它的形式如下：
+
+若随机变量 $X$ 只取非负值，则 $\forall  a$，有
+
+$$
+P(X\ge a) \le \frac{E(X)}{a}
+$$
+
+这是一个非常基础的不等式，利用它可以方便地证明 Chebyshev 不等式。
+
+## Chebyshev 
+\begin{align}
+
+P(|X-\mu| \ge \varepsilon ) &\le \frac{\sigma ^ 2}{\varepsilon ^2}  \\
+P(|X-\mu| \le \varepsilon ) &\ge1- \frac{\sigma ^ 2}{\varepsilon ^2}
+\end{align}
+## 中心极限定理
+P(S_N \ge \frac{1}{2}N) \lesssim \frac{1}{\sqrt{2\pi}}e^{-\frac{N}{8}} \\
+
+P(S_N \ge \frac{1}{2}N) \lesssim \frac{1}{\sqrt{2\pi}}e^{-\frac{N}{8}} + \frac{\rho}{\sqrt N}
+
+## Hoeffding 不等式
+P(S_N \ge \frac{1}{2}N) \le e^{-\frac{N}{8}}
+## chernoff 界
