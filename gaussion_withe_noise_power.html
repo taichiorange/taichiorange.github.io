@@ -1,0 +1,48 @@
+<html><head><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/vditor@3.6.0/dist/index.css"/>
+<script src="https://cdn.jsdelivr.net/npm/vditor@3.6.0/dist/method.min.js"></script></head>
+<body><div class="vditor-reset" id="preview"><p>对于均值为 0 ，方差为 <span class="vditor-math"> \sigma^2 </span> 的高斯白噪声，其方差就是它的功率谱密度。<br />
+假设电压 <span class="vditor-math">v</span> ，服从高斯分布，其均值为 0， 方差为 <span class="vditor-math"> \sigma^2 </span> ，那么，给定任何一个 <span class="vditor-math">v</span>，则其功率:</p>
+<div class="vditor-math">Power = \frac{v^2}{R}</div>
+<p>假定电阻的阻值为 1 欧姆，则功率就是：</p>
+<div class="vditor-math">Power =v^2</div>
+<p>但是，电压 <span class="vditor-math">v</span> 的取值是随机，服从高斯分布，其均值为 0， 方差为 <span class="vditor-math"> \sigma^2 </span>：</p>
+<div class="vditor-math">p(v) = \frac{1} { \sqrt{2\pi}\sigma } e^{ -\frac{x^2}{2\sigma^2}}</div>
+<p>那么，我们只能计算统计意义下的平均功率，即依概率平均：</p>
+<div class="vditor-math">\begin{aligned}
+Power_{avg} &amp;= \int_{-\infty}^{+\infty} v^2p(v) dv  \\
+&amp;=\int_{-\infty}^{+\infty} 
+              v^2    \frac{1} { \sqrt{2\pi}\sigma }    e^{ -\frac{x^2}{2\sigma^2}}  dv
+\end{aligned}</div>
+<p>其实，上式最后就是方差的计算公式（ 0 均值的条件下）.<br />
+具体的计算，可以采用分步积分，先把 <span class="vditor-math">e^{ -\frac{x^2}{2\sigma^2}} </span> 拿到 <span class="vditor-math">dv</span> 里面，做一次分步计算即可。具体可以见后面的附录。</p>
+<h1 id="附录-方差的计算">附录：方差的计算</h1>
+<div class="vditor-math">\begin{aligned}
+\int_{-\infty}^{+\infty} 
+              v^2    \frac{1} { \sqrt{2\pi}\sigma }    e^{ -\frac{x^2}{2\sigma^2}}  dv 
+&amp;=
+			\int_{-\infty}^{+\infty} 
+              		v^2    \frac{1} { \sqrt{2\pi}\sigma }   (-1)\frac{2\sigma^2}{2v}  d(e^{ -\frac{v^2}{2\sigma^2}} ) \\
+&amp;=  -\frac{\sigma}{\sqrt{2\pi}}   \int_{-\infty}^{+\infty}  v   d(e^{ -\frac{v^2}{2\sigma^2}} ) \\
+&amp;=  -\frac{\sigma}{\sqrt{2\pi}}  v e^{ -\frac{v^2}{2\sigma^2}} |_{-\infty}^{+\infty}     +
+         \frac{\sigma}{\sqrt{2\pi}} \int_{-\infty}^{+\infty}  e^{ -\frac{v^2}{2\sigma^2}} dv  \\
+&amp;= 0 + \sigma^2    \int_{-\infty}^{+\infty}   \frac{1} { \sqrt{2\pi}\sigma }  e^{ -\frac{v^2}{2\sigma^2}} dv  \\
+&amp;= \sigma^2
+\end{aligned}</div>
+</div>
+<script>
+    const previewElement = document.getElementById('preview')
+    Vditor.setContentTheme('light', 'https://cdn.jsdelivr.net/npm/vditor@3.6.0/dist/css/content-theme');
+    Vditor.codeRender(previewElement, 'zh_CN');
+    Vditor.highlightRender({"enable":true,"lineNumber":false,"style":"github"}, previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.6.0');
+    Vditor.mathRender(previewElement, {
+        cdn: 'https://cdn.jsdelivr.net/npm/vditor@3.6.0',
+        math: {"engine":"KaTeX","inlineDigit":false,"macros":{}},
+    });
+    Vditor.mermaidRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.6.0');
+    Vditor.flowchartRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.6.0');
+    Vditor.graphvizRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.6.0');
+    Vditor.chartRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.6.0');
+    Vditor.mindmapRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.6.0');
+    Vditor.abcRender(previewElement, 'https://cdn.jsdelivr.net/npm/vditor@3.6.0');
+    Vditor.mediaRender(previewElement);
+</script></body></html>
