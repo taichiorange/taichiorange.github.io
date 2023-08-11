@@ -1,10 +1,6 @@
 # 欢迎来到乐吧的主页
-# [邮箱 d@leba2010.com](myabout.html)
-# [专栏二: zadoff 码](/zadoff/zadoff_fast_dft_algorithm_explain/zadoff_fast_dft_algorithm_explain.html)
-
-[专栏一：乐吧的数学是一种思想](/python_teaching/index.html)
-
-# [0 均值高斯白噪声的功率为什么是 sigma 的平方](gaussion_withe_noise_power.html)
+# [B站主页]([乐吧的数学的个人空间_哔哩哔哩_bilibili](https://space.bilibili.com/440505187))
+# 
 
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
