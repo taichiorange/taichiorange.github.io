@@ -1,6 +1,10 @@
 # 欢迎来到乐吧的主页
-# [B站主页]([乐吧的数学的个人空间_哔哩哔哩_bilibili](https://space.bilibili.com/440505187))
-# 
+# [B站主页]([乐吧的数学的个人空间_哔哩哔哩_bilibili]https://space.bilibili.com/440505187)
+
+
+
+[B 站主页：乐吧的数学](https://space.bilibili.com/440505187)
+
 
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
