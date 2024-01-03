@@ -13,9 +13,9 @@
 
 3.3.3 天线极化
 
-天线的极化 $$\hat{\boldsymbol{\psi}}$$    定义为天线发射波的极化。例如，第3.3.1节中的极小偶极子被称为垂直极化（因为 $$\boldsymbol{E}_{\phi} = 0$$）。一般来说，天线极化是观测角度的函数，即 $$\hat{\boldsymbol{\psi}}_a(\theta,\phi)$$
+天线的极化 $\hat{\boldsymbol{\psi}}$    定义为天线发射波的极化。例如，第3.3.1节中的极小偶极子被称为垂直极化（因为 $\boldsymbol{E}_{\phi} = 0$）。一般来说，天线极化是观测角度的函数，即 $\hat{\boldsymbol{\psi}}_a(\theta,\phi)$
 
-从互易性的角度考虑（也见第3.3.5节），天线的极化在接收端同样适用，此时应理解为入射平面波的极化，并且接收功率达到最大。重要的是要注意，天线的接收极化是其发射极化的镜像。为了理解这一点，假设一个天线发射出去的波,其极化为 $$ \hat{\boldsymbol{\psi}}_a = a_{\theta} \hat{\boldsymbol{\theta}} + a_{\varphi} \hat{\boldsymbol{\varphi}}$$ 。然而，\textit{波的极化}是沿波传播方向来观察的角度来定义的；因此，具有相同波极化的入射波将在接收天线的坐标系中沿着  $$ \hat{\boldsymbol{\psi}}_a = a_{\theta} \hat{\boldsymbol{\theta}} - a_{\varphi} \hat{\boldsymbol{\varphi}}$$向振荡。因此，为了最大化接收功率，天线的接收极化 $$\hat{\boldsymbol{\psi}}_{a,r}$$
+从互易性的角度考虑（也见第3.3.5节），天线的极化在接收端同样适用，此时应理解为入射平面波的极化，并且接收功率达到最大。重要的是要注意，天线的接收极化是其发射极化的镜像。为了理解这一点，假设一个天线发射出去的波,其极化为 $ \hat{\boldsymbol{\psi}}_a = a_{\theta} \hat{\boldsymbol{\theta}} + a_{\varphi} \hat{\boldsymbol{\varphi}}$ 。然而，\textit{波的极化}是沿波传播方向来观察的角度来定义的；因此，具有相同波极化的入射波将在接收天线的坐标系中沿着  $ \hat{\boldsymbol{\psi}}_a = a_{\theta} \hat{\boldsymbol{\theta}} - a_{\varphi} \hat{\boldsymbol{\varphi}}$ 向振荡。因此，为了最大化接收功率，天线的接收极化 $\hat{\boldsymbol{\psi}}_{a,r}$ 
 应当等于$$ \hat{\boldsymbol{\psi}}_a = a_{\theta} \hat{\boldsymbol{\theta}} - a_{\varphi} \hat{\boldsymbol{\varphi}}$$, 使用 Jones 矢量，发射极化和接收极化的关系可以表示为
 $$
 \underline{\hat{\boldsymbol{\psi}}}_{a,r} =
