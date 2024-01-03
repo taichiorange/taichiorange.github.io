@@ -1,3 +1,16 @@
+<head>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+</head>
+
+
 3.3.3 天线极化
 
 天线的极化 $\hat{\boldsymbol{\psi}}$    定义为天线发射波的极化。例如，第3.3.1节中的极小偶极子被称为垂直极化（因为 $\boldsymbol{E}_{\phi} = 0$）。一般来说，天线极化是观测角度的函数，即 $\hat{\boldsymbol{\psi}}_a(\theta,\phi)$
