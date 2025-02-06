@@ -4,7 +4,7 @@
   </script>
 </head>
 
-[.MUSIC:Multiple Signal Classification algorithm](./MUSIC-Multiple-Signal-Classification.html) 
+[.MUSIC:Multiple Signal Classification algorithm](MUSIC-Multiple-Signal-Classification.html) 
 
 # MUSIC (Multiple Signal Classification) Algorithm
 
