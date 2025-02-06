@@ -17,9 +17,11 @@ The MUSIC algorithm is based on the eigenvalue decomposition of the signal's cov
 ### (1) Constructing the Covariance Matrix
 
 Assume that the received signal $$\mathbf{y}(t)$$ consists of $M$ plane wave signals and noise:
+
 $$
 \mathbf y(t)=\sum_{i=1}^M s_i(t) \mathbf a(k_i)+ \mathbf n(t) \tag{1}
 $$
+
 where:
 
 - $$s_i(t)$$ is the amplitude of the $i$-th signal.
@@ -29,22 +31,31 @@ where:
 Let the number of antennas be N. 
 
 Defining:
+
 $$
 \mathbf A = [\mathbf{a}(k_1), \mathbf{a}(k_2), \dots, \mathbf{a}(k_M)], \quad \mathbf S(t) = [s_1(t),s_2(t),\dots,s_M(t)]^\text T\tag{2}
 $$
+
 the equation above can be rewritten as:
+
 $$
 \mathbf y(t)= \mathbf A \boldsymbol{S}(t) + \mathbf n(t)\tag{3}
 $$
+
 The **spatial covariance matrix** of the signal is computed as:
+
 $$
  \boldsymbol R_y=\text{E}[\mathbf y \mathbf y^H]\tag{4}
 $$
+
 Expanding it using the previous equation:
+
 $$
 \boldsymbol{R} = \text{E}\left [\left (\mathbf A \boldsymbol{S}(t) + \mathbf n(t) \right )\left (\mathbf A \boldsymbol{S}(t) + \mathbf n(t)\right )^H\right ]\tag{5}
 $$
+
 If the signals are stationary, and the noise is zero-mean Gaussian white noise, and signals are uncorrelated with noise, then:
+
 $$
 \boldsymbol R_y=\boldsymbol A \boldsymbol R_s \boldsymbol A^H+\sigma^2 \boldsymbol I 
 \tag{6}
@@ -60,6 +71,7 @@ where:
 ### (2) Eigenvalue Decomposition (EVD)
 
 Perform eigenvalue decomposition on $$\boldsymbol R_y$$:
+
 $$
 \boldsymbol R_y = \boldsymbol U \boldsymbol\Lambda \boldsymbol U^H
 \tag{7}
@@ -77,6 +89,7 @@ In this decomposition:
 - The **remaining smaller eigenvalues** correspond to the noise subspace $$\boldsymbol U_n$$.
 
 Thus,
+
 $$
 \boldsymbol R_y = \boldsymbol U_s \boldsymbol\Lambda_s \boldsymbol U_s^H + \boldsymbol U_n \boldsymbol\Lambda_n \boldsymbol U_n^H
 \tag{8}
@@ -86,13 +99,17 @@ $$
 ### (3) Compute the MUSIC Pseudo-Spectrum
 
 Since the noise subspace $$\boldsymbol U_n$$ is orthogonal to the signal's array manifold  $$\mathbf{a}(k)$$ , i.e.,
+
 $$
 \boldsymbol U_n^H \mathbf{a}(k) \approx 0\tag{9}
 $$
+
 the MUSIC pseudo-spectrum can be constructed as:
+
 $$
  P_{\text{MUSIC}}(k) = \frac{1}{\mathbf{a}^H(k) \boldsymbol U_n \boldsymbol U_n^H \mathbf{a}(k)}\tag{10}
 $$
+
 where:
 
 - $$\boldsymbol U_n$$ is the noise subspace eigenvector matrix.
@@ -132,9 +149,11 @@ Next, we analyze equations (6) and (8).
 ### 1) Structure of the Matrix $$A R_s A^H$$
 
 Revisiting the signal covariance matrix:
+
 $$
 \boldsymbol R_y = \boldsymbol A \boldsymbol R_s \boldsymbol A^H + \sigma_n^2 \boldsymbol I
 $$
+
 where:
 
 - $$\boldsymbol A$$ is the $$N \times M$$ array manifold matrix, with each column $$\mathbf{a}(k_i)$$ being a manifold vector for a signal direction:
@@ -152,9 +171,11 @@ $$
 where $$\lambda_i$$ represents the power of the signal sources.
 
 We focus on:
+
 $$
 \boldsymbol A \boldsymbol R_s \boldsymbol A^H
 $$
+
 which is an **$$N \times N$$ matrix**, but its rank is at most **M**.
 
 ### 2) Why is the Rank of $$\boldsymbol A \boldsymbol R_s \boldsymbol A^H$$ at Most M?
@@ -171,6 +192,7 @@ The **rank of a matrix** is the number of linearly independent column vectors, i
 - Assuming A is full rank, we denote rank(A) = M.
 
 **(c) After Multiplying by $$R_s$$**
+
 $$
  \boldsymbol A \boldsymbol R_s
 $$
@@ -193,9 +215,11 @@ still only contains M independent directions, as it is formed by linear combinat
 ### 3) Why is the Column Space of $$A R_s A^H$$ Spanned by A?
 
 Since:
+
 $$
 A R_s A^H = A (\text{diag}(\lambda_1, \lambda_2, ..., \lambda_M)) A^H
 $$
+
 Step-by-step analysis:
 
 - **$$R_s$$ only scales A (since it is a diagonal matrix).**
@@ -224,6 +248,7 @@ Thus, **$$A R_s A^H$$ remains in the signal subspace spanned by A, and its rank 
 **(a) Signal Subspace**
 
 Perform eigenvalue decomposition on $$R_y = A R_s A^H + \sigma_n^2 I$$:
+
 $$
 R_y = U \Lambda U^H
 $$
@@ -243,6 +268,7 @@ $$
 
 
 This explains why the MUSIC pseudo-spectrum is constructed as:
+
 $$
 P_{\text{MUSIC}}(k) = \frac{1}{\mathbf{a}^H(k) U_n U_n^H \mathbf{a}(k)}
 $$
@@ -259,9 +285,11 @@ $$
 ### 1) Why Are the Noise Subspace and Signal Subspace Orthogonal?
 
 Starting from the eigenvalue decomposition (EVD) of the covariance matrix $$R_y$$:
+
 $$
 R_y = U_s \Lambda_s U_s^H + U_n \Lambda_n U_n^H
 $$
+
 where:
 
 - **$$U_s$$ is the eigenvector matrix of the signal subspace, corresponding to the largest M eigenvalues (strong signal energy).**
@@ -269,9 +297,11 @@ where:
 - **Since the eigenvector matrix $$U = [U_s, U_n]$$ is orthogonal, $$U_s$$ and $$U_n$$  are mutually orthogonal.**
 
 This implies:
+
 $$
 U_n^H U_s = 0
 $$
+
 which means **the noise subspace and the signal subspace are completely orthogonal**.
 
 ### 2) Why Are the Eigenvectors of the Noise Subspace Orthogonal to the Signal Subspace?
@@ -285,9 +315,11 @@ In other words:
 - Since $$U_s$$ and $$U_n$$ are orthogonal, every eigenvector in $$U_n$$ is orthogonal to every eigenvector in $$U_s$$.
 
 Thus, we can rigorously express this as:
+
 $$
 U_n^H \mathbf{a}(k) \approx 0, \quad \forall k \in \text{signal directions}
 $$
+
 This implies:
 
 - Any manifold vector $$\mathbf{a}(k)$$ of a signal **almost entirely lies in the signal subspace and does not project onto the noise subspace**.
@@ -320,10 +352,13 @@ If there were M+1 manifold vectors orthogonal to the noise subspace, they would 
 ## Vandermonde Matrix
 
 For an $$n \times n$$ Vandermonde matrix:
+
 $$
 V = \begin{bmatrix} 1 & 1 & 1 & \cdots & 1 \\ \lambda_1 & \lambda_2 & \lambda_3 & \cdots & \lambda_n \\ \lambda_1^2 & \lambda_2^2 & \lambda_3^2 & \cdots & \lambda_n^2 \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ \lambda_1^{n-1} & \lambda_2^{n-1} & \lambda_3^{n-1} & \cdots & \lambda_n^{n-1} \end{bmatrix}
 $$
+
 Its determinant is given by:
+
 $$
 \det(V) = \prod_{1 \leq i < j \leq n} (\lambda_j - \lambda_i)
 $$
@@ -332,13 +367,17 @@ $$
 - **If some $$\lambda_i$$ values are identical**, the determinant becomes zero, indicating **the matrix is not full rank and has rank less than nn**.
 
 The matrix formed by the manifold vectors is also a Vandermonde matrix:
+
 $$
 V = \begin{bmatrix} e^{j\theta_1\times0} & e^{j\theta_2\times0} & e^{j\theta_3\times0} & \cdots & e^{j\theta_n\times0} \\ e^{j\theta_1\times1} & e^{j\theta_2\times1} & e^{j\theta_3\times1} & \cdots & e^{j\theta_n\times1} \\ e^{j\theta_1\times2} & e^{j\theta_2\times2} & e^{j\theta_3\times2} & \cdots & e^{j\theta_n\times2} \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ e^{j\theta_1\times(n-1)} & e^{j\theta_2\times(n-1)} & e^{j\theta_3\times(n-1)} & \cdots & e^{j\theta_n\times(n-1)} \\ \end{bmatrix}
 $$
+
 This can be rewritten in a form similar to the basis of a DFT transform:
+
 $$
 V = \begin{bmatrix} e^{j\frac{k_1}{n\times Q}\times0} & e^{j\frac{k_2}{n\times Q}\times0} & e^{j\frac{k_3}{n\times Q}\times0} & \cdots & e^{j\frac{k_n}{n\times Q}\times0} \\ e^{j\frac{k_1}{n\times Q}\times1} & e^{j\frac{k_2}{n\times Q}\times1} & e^{j\frac{k_3}{n\times Q}\times1} & \cdots & e^{j\frac{k_n}{n\times Q}\times1} \\ e^{j\frac{k_1}{n\times Q}\times2} & e^{j\frac{k_2}{n\times Q}\times2} & e^{j\frac{k_3}{n\times Q}\times2} & \cdots & e^{j\frac{k_n}{n\times Q}\times2} \\ \vdots & \vdots & \vdots & \ddots & \vdots \\ e^{j\frac{k_1}{n\times Q}\times(n-1)} & e^{j\theta_2\times(n-1)} & e^{j\frac{k_3}{n\times Q}\times(n-1)} & \cdots & e^{j\frac{k_n}{n\times Q}\times(n-1)} \\ \end{bmatrix}
 $$
+
 where $$k_i<n\times Q$$, and $$Q$$ is any positive integer representing the oversampling factor.
 
 
