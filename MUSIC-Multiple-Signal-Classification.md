@@ -4,6 +4,8 @@
   </script>
 </head>
 
+[.back to index](/index.html) 
+
 # MUSIC (Multiple Signal Classification) Algorithm
 
 MUSIC (Multiple Signal Classification) is a **high-resolution spectral estimation algorithm based on subspace decomposition**, commonly used in **DOA (Direction of Arrival) estimation, f-k spectrum analysis, radar signal processing**, etc. It utilizes the **orthogonality between the signal subspace and noise subspace** to distinguish different signal wave-beams k or direction angles $$\theta$$, achieving super-resolution capability to resolve closely spaced wave-beams or arrival angles.
