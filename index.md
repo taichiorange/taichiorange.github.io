@@ -269,6 +269,7 @@ $$
 
 This explains why the MUSIC pseudo-spectrum is constructed as:
 
+
 $$
 P_{\text{MUSIC}}(k) = \frac{1}{\mathbf{a}^H(k) U_n U_n^H \mathbf{a}(k)}
 $$
