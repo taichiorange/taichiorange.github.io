@@ -441,4 +441,4 @@ plt.xticks(np.arange(0, 1, 0.1))
 plt.show()
 ```
 
-![five_angles](/python_teaching/A0060_turtle_01_simple_drawing/36_6.png)
+![MUSIC](/figure/mimo/music/music.png)
