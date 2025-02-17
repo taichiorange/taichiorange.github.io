@@ -18,7 +18,7 @@ The MUSIC algorithm is based on the eigenvalue decomposition of the signal's cov
 
 ### (1) Constructing the Covariance Matrix
 
-Assume that the received signal $$\mathbf{y}(t)$$ consists of $M$ plane wave signals and noise:
+Assume that the received signal $$\mathbf{y}(t)$$ consists of $$M$$ plane wave signals and noise:
 
 $$
 \mathbf y(t)=\sum_{i=1}^M s_i(t) \mathbf a(k_i)+ \mathbf n(t) \tag{1}
@@ -26,8 +26,8 @@ $$
 
 where:
 
-- $$s_i(t)$$ is the amplitude of the $i$-th signal.
-- $$\mathbf{a}(k_i)$$ is the array manifold vector corresponding to the wave-beam $k_i$.
+- $$s_i(t)$$ is the amplitude of the $$i$$-th signal.
+- $$\mathbf{a}(k_i)$$ is the array manifold vector corresponding to the wave-beam $$k_i$$.
 - $$\mathbf{n}(t)$$ is the noise term.
 
 Let the number of antennas be N. 
@@ -144,7 +144,7 @@ $$
 
 ## Meaning of Eigenvalue Decomposition of the Covariance Matrix
 
-The MUSIC algorithm aims to find the $M$ manifold vectors $$\textbf{a}(k_i)$$ from equation (1), which corresponds to finding the matrix $$\mathbf{A}$$ in equation (2).
+The MUSIC algorithm aims to find the $$M$$ manifold vectors $$\textbf{a}(k_i)$$ from equation (1), which corresponds to finding the matrix $$\mathbf{A}$$ in equation (2).
 
 Next, we analyze equations (6) and (8).
 
@@ -383,6 +383,9 @@ $$
 
 where $$k_i<n\times Q$$, and $$Q$$ is any positive integer representing the oversampling factor.
 
+The implementation code can be found on GitHub: https://github.com/taichiorange/leba_math, under the directory:
+
+leba_math/MIMO/MIMO-beam-detection/root-MUSIC-algorithm.py
 
 ```python
 import numpy as np
