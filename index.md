@@ -12,4 +12,5 @@
 [.MUSIC:Multiple Signal Classification algorithm](/MUSIC-Multiple-Signal-Classification.html) 
 
 [.rootMUSIC](/rootMUSIC.html) 
+[.spatial smoothing MUSIC](/spatial_smoothing_MUSIC.html) 
 
