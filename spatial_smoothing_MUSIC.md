@@ -35,7 +35,7 @@ $$
 
 
 
-In the MUSIC algorithm \cite{Schmidt1979}\cite{Schmidt_MUSIC_Algorithm}, when deriving the formulas, we need to analyze the covariance matrix of the signal.
+In the MUSIC algorithm [1][2], when deriving the formulas, we need to analyze the covariance matrix of the signal.
 $$
     \textbf{R}_s = \textbf{E}[\mathbf{X} \mathbf{X}^H]
 \tag{3}
@@ -51,7 +51,7 @@ $$
 
 where $M$ is the actual number of beams.
 
-To address this issue, **spatial smoothing** \cite{TIE_MUSIC_SPATIAL_SMOOTHING_1164649} is applied. This technique partitions the array antenna into multiple subarrays and computes the average of their covariance matrices. By doing so, it reduces the impact of signal correlation, allowing the MUSIC algorithm to remain effective.
+To address this issue, **spatial smoothing** [3] is applied. This technique partitions the array antenna into multiple subarrays and computes the average of their covariance matrices. By doing so, it reduces the impact of signal correlation, allowing the MUSIC algorithm to remain effective.
 
 ### Spatial Smoothing Method
 
@@ -827,7 +827,11 @@ $$
 
 Based on the previous proof of the Vandermonde matrix, b0 and b1 are uncorrelated. Therefore, the rank of matrix G is 2, and it is full rank.
 
+[1] R. Schmidt. “Multiple emitter location and signal parameter estimation”. In: Proceedings of RADC Spectrum Estimation Workshop. Saxpy Computer Corporation, USA, 1979, pp. 243–258.
 
+[2] R. Schmidt. “Multiple emitter location and signal parameter estimation”. In: IEEE Trans-actions on Antennas and Propagation 34.3 (1986), pp. 276–280. doi: 10.1109/TAP.1986.1143830.
+
+[3] Tie-Jun Shan, M. Wax, and T. Kailath. “On spatial smoothing for direction-of-arrival estima-tion of coherent signals”. In: IEEE Transactions on Acoustics, Speech, and Signal Processing 33.4 (1985), pp. 806–811. doi: 10.1109/TASSP.1985.1164649.
 
 ## Using SVD Decomposition to Find the Noise Subspace
 
